@@ -13,87 +13,91 @@
         background-color: #faf9f6 !important;
     }
 </style>
-<header class="bg-green-800  text-white shadow-lg ">
-    <div class="container mx-auto flex items-center h-24 justify-between">
-        <a href="" class="flex items-center justify-center">
-            <img class="h-16" src="/src/img/logo.jpg" alt="" />
-            
-        </a>
-        <button class="lg:hidden text-white focus:outline-none">
-            <!-- Icono de hamburguesa -->
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-        </button>
-        <nav class="hidden lg:flex font-semibold text-base lg:text-lg">
-            <ul class="mx-auto flex items-center">
-                <li class="p-5 xl:p-8 active hover:bg-green-900 hover:text-amber-400 rounded-lg ">
-                    <a href="./index.html" class="font-bold ">
-                        <span>Inicio</span>
-                    </a>
+
+
+<div class="w-full ">
+
+    <header class="relative navbar bg-green-800  text-white  ">
+        <div class="fixed top-0 left-0 w-full bg-green-800 text-white shadow-lg z-10">
+            <div class="container mx-auto flex items-center h-24 justify-between">
+                <a href="" class="flex items-center justify-center">
+                    <img class="h-16 transform transition duration-500 hover:scale-110" src="/src/img/logo.jpg"   alt="Logo" />
+                </a>
+                <button class="lg:hidden text-white focus:outline-none hamburger">
+                    <!-- Icono de hamburguesa -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+                <nav class="hidden lg:flex font-semibold text-base lg:text-lg">
+                    <ul class="mx-auto flex items-center">
+                        <li class="p-5 xl:p-8 active hover:bg-green-900 hover:text-amber-400 rounded-lg">
+                            <a href="./index.html" class="font-bold">
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg">
+                            <a href="./productos.html" class="font-bold">
+                                <span>Productos</span>
+                            </a>
+                        </li>
+                        <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg">
+                            <a href="contactos.html" class="font-bold">
+                                <span>Contactos</span>
+                            </a>
+                        </li>
+                        <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg">
+                            <a href="./nosotros.html" class="font-bold">
+                                <span>Conocenos</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="border border-white rounded-full font-bold px-8 py-2 md:hover hidden lg:block hover:bg-green-900 hover:text-amber-400">Contact me</button>
+            </div>
+        </div>
+        <nav class="lg:hidden mt-24">
+            <ul class="flex flex-col items-center justify-end space-y-4 h-38">
+                <li class="hover:text-amber-400 rounded-lg">
+                    <a href="" class="block text-white p-2 text-lg font-bold">Inicio</a>
                 </li>
-                <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg ">
-                    <a href="./productos.html" class="font-bold">
-                        <span>Productos</span>
-                    </a>
+                <li>
+                    <a href="" class="block text-white p-2 text-lg font-bold">Productos</a>
                 </li>
-                
-                <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg ">
-                    <a href="contactos.html" class="font-bold">
-                        <span>Contactos</span>
-                    </a>
+                <li>
+                    <a href="" class="block text-white p-2 text-lg font-bold">Contactos</a>
                 </li>
-                <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg ">
-                    <a href="./nosotros.html" class="font-bold">
-                        <span>Conocenos</span>
-                    </a>
+                <li>
+                    <a href="" class="block text-white p-2 text-lg font-bold">Conocenos</a>
                 </li>
             </ul>
         </nav>
-        <button class="border border-white rounded-full font-bold px-8 py-2 md:hover hidden lg:block">Contact me</button>
-    </div>
-    <nav class="lg:hidden ">
-        <ul class="flex flex-col items-center justify-end  space-y-4 h-38">
-            <li class="hover:text-amber-400 rounded-lg ">
-                <a href="" class="block text-white p-2 text-lg font-bold">Inicio</a>
-            </li>
-            <li>
-                <a href="" class="block text-white p-2 text-lg font-bold">Productos</a>
-            </li>
-            <li>
-                <a href="" class="block text-white p-2 text-lg font-bold">Contactos</a>
-            </li>
-            <li>
-                <a href="" class="block text-white p-2 text-lg font-bold">Conocenos</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<div class="w-full ">
-    <div class="flex bg-white" style="height:600px;">
-        <div class="flex items-center text-center lg:text-left px-8 md:px-8 lg:w-1/2">
-            <div>
-                <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl text-green-800">Maderas  <span class="text-amber-400">Eternas</span></h2>
-                <p class="mt-2 text-sm text-gray-500 md:text-base">Somos una compañía Ecuatoriana que lleva 10 años de experiencia dedicados a la construcción y ensamblaje de toda clase de productos y creaciones con madera inmunizada con productos ecológicos.
-
-                    Ofreciendo garantías de 10 años en nuestros productos, que además cumplen con todos los estándares de calidad y los puedes adquirir a precios razonables.
-                    
-                    Realizamos entregas en todo el territorio nacional, con instalación inmediata</p>
-                <div class="flex justify-center lg:justify-start mt-6">
-                    <a class="px-4 py-3 bg-green-800 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800" href="#">Get Started</a>
-                    <a class="mx-4 px-4 py-3 bg-amber-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400" href="#">Learn More</a>
+        <div class="flex bg-white" style="height:550px;">
+            <div class="flex items-center text-center lg:text-left px-8 md:px-8 lg:w-1/2">
+                <div>
+                    <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl text-green-800">Maderas <span class="text-amber-400">Eternas</span></h2>
+                    <p class="mt-2 text-sm text-gray-500 md:text-base">
+                        Somos una compañía ecuatoriana con 10 años de experiencia dedicada a la construcción y ensamblaje de productos de madera inmunizada con productos ecológicos. Ofrecemos garantías de 10 años en nuestros productos, que cumplen con todos los estándares de calidad y están disponibles a precios razonables. Realizamos entregas en todo el territorio nacional, con instalación inmediata.
+                    </p>
+                    <div class="flex justify-center lg:justify-start mt-6">
+                        <a class="px-4 py-3 bg-green-800 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800" href="#">Get Started</a>
+                        <a class="mx-4 px-4 py-3 bg-amber-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400" href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:block lg:w-1/2  " style="clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%)">
+                <div class="h-full bg-cover bg-center transform transition duration-500 hover:scale-110" style="background-image: url('/src/img/banner.jpg');">
+                    <div class="h-full bg-black opacity-25"></div>
                 </div>
             </div>
         </div>
-        <div class="hidden lg:block lg:w-1/2" style="clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%)">
-            <div class="h-full object-cover" style="background-image: url(/src/img/banner.jpg)">
-                <div class="h-full bg-black opacity-25"></div>
-            </div>
-        </div>
-    </div>
+    </header>
+    
+    <section class="">
 
-    <a class="bg-emerald-600 shadow-lg rounded-full py-3 fixed botton-0 right-0 h-12 w-24 text-center font-bold text-white">Contactos</a>
-    <!--Mision & Vision-->
+    </section>
+    
+    <!--Razones-->
     <section class="">
         <div class="py-12 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -103,7 +107,7 @@
                         class="font-heading mb-4 bg-green-100 text-green-800 px-4 py-2 rounded-lg md:w-64 md:mx-auto text-xs font-semibold tracking-widest text-black uppercase title-font text-center">
                         ¿Por qué elegirnos?
                     </h2>
-                    <p class="font-heading mt-2 text-3xl leading-8 font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                    <p class="font-heading mt-2 text-3xl leading-8 font-semibold tracking-tight  sm:text-4xl text-amber-400">
                        Calidad y Sostenibilidad al Mejor Precio
                     </p>
                     <p class="mt-4 max-w-2xl text-lg text-gray-500 lg:mx-auto">
@@ -116,8 +120,8 @@
                         <div class="relative">
                             <dt>
                                 <div
-                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
-                                    <img src="./src/icons/experience.svg" alt="Experiencia">
+                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white ">
+                                    <img src="./src/icons/experience.svg" class="transform transition duration-500 hover:scale-110" alt="Experiencia">
                                 </div>
                                 <p class="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Experiencia Garantizada</p>
                             </dt>
@@ -129,7 +133,7 @@
                             <dt>
                                 <div
                                     class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
-                                    <img src="./src/icons/installation.svg" alt="Instalación">
+                                    <img src="./src/icons/installation.svg"  class="transform transition duration-500 hover:scale-110"alt="Instalación">
                                 </div>
                                 <p class="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Instalación Inmediata</p>
                             </dt>
@@ -141,7 +145,7 @@
                             <dt>
                                 <div
                                     class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
-                                    <img src="/src/icons/eco-friendly.svg" alt="Ecológico">
+                                    <img src="/src/icons/eco-friendly.svg" class="transform transition duration-500 hover:scale-110" alt="Ecológico">
                                 </div>
                                 <p class="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Compromiso Ecológico</p>
                             </dt>
@@ -153,7 +157,7 @@
                             <dt>
                                 <div
                                     class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
-                                    <img src="./src/icons/best-price.svg" alt="Calidad-Precio">
+                                    <img src="./src/icons/best-price.svg" class="transform transition duration-500 hover:scale-110" alt="Calidad-Precio">
                                 </div>
                                 <p class="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Relación Calidad-Precio</p>
                             </dt>
@@ -167,13 +171,62 @@
             </div>
         </div>
     </section>
+    <!-- Productos-->
+    <section class="py-10" id="services">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Nuestro Productos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://image3.jdomni.in/banner/13062021/42/5C/B1/45AC18B7F8EE562BC3DDB95D34_1623559815667.png?output-format=webp" alt="wheat flour grinding"
+                        class="w-full h-64 object-cover transform transition duration-500 hover:scale-110">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-medium text-gray-800 mb-2">Wheat Flour Grinding</h3>
+                        <p class="text-gray-700 text-base">Our wheat flour grinding service provides fresh, high-quality
+                            flour to businesses and individuals in the area. We use state-of-the-art equipment to grind
+                            wheat into flour, and we offer a variety of flours to meet the needs of our customers.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1606854428728-5fe3eea23475?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3JhbSUyMGZsb3VyfGVufDB8fDB8fHww" alt="Coffee"
+                        class="w-full h-64 object-cover transform transition duration-500 hover:scale-110">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-medium text-gray-800 mb-2">Gram Flour Grinding</h3>
+                        <p class="text-gray-700 text-base">Our gram flour is perfect for a variety of uses, including
+                            baking, cooking, and making snacks. It is also a good source of protein and fiber.Our gram flour
+                            grinding service is a convenient and affordable way to get the freshest gram flour possible.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://image2.jdomni.in/banner/13062021/D2/99/0D/48D7F4AFC48C041DC8D80432E9_1623562146900.png?output-format=webp" alt="Coffee"
+                        class="w-full h-64 object-cover transform transition duration-500 hover:scale-110">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-medium text-gray-800 mb-2">Jowar Flour Grinding</h3>
+                        <p class="text-gray-700 text-base">Our jowar grinding service is a convenient and affordable way to
+                            get fresh, high-quality jowar flour. We use state-of-the-art equipment to grind jowar into a
+                            fine powder, which is perfect for making roti, bread, and other dishes.
+                        <details>
+                            <summary>Read More</summary>
+                            <p>Our jowar flour is also
+                                a good source of protein and fiber, making it a healthy choice for your family.</p>
+                        </details>
+                        </p>
+
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </section>
+    <!--Mision & Vision-->
     <section class="bg-gray-50 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 class="text-center font-bold text-green-800  text-2xl ">Mision y Vision</h1>
             <div class="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0">
                 <div class="bg-white p-6 rounded-lg shadow-md flex-1">
-                    <h3 class="text-2xl font-semibold text-green-800 mb-4">Nuestra Misión</h3>
-                    <img src="./src/icons/mision.svg" alt="Calidad-Precio" class="h-32">
+                    <h3 class="text-2xl font-semibold text-green-800 mb-4 text-center">Nuestra Misión</h3>
+                    <img src="./src/icons/mision.svg" alt="Calidad-Precio" class="h-32 m-auto transform transition duration-500 hover:scale-110">
                     <p class="text-lg text-gray-700 ">
                         En Maderas Eternas, nuestra misión es proporcionar productos de madera inmunizada de alta calidad que
                         cumplan con los estándares ecológicos, ofreciendo soluciones sostenibles y estéticamente agradables
@@ -181,9 +234,9 @@
                     </p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md flex-1">
-                    <h3 class="text-2xl font-semibold text-green-800 mb-4">Nuestra Visión</h3>
+                    <h3 class="text-2xl font-semibold text-green-800 mb-4 text-center">Nuestra Visión</h3>
          
-                        <img src="./src/icons/vision.svg" alt="Calidad-Precio"  class="h-32">
+                        <img src="./src/icons/vision.svg" alt="Calidad-Precio"  class="h-32 m-auto transform transition duration-500 hover:scale-110">
                
                     <p class="text-lg text-gray-700">
                         Nuestra visión es ser líderes en el mercado de productos de madera, reconocidos por nuestra
@@ -194,9 +247,9 @@
             </div>
         </div>
     </section>
-    
-    
-    
+
+</div>    
+<a class=" bg-emerald-800 shadow-lg rounded-full py-3 px-6 botton-0  h-12 w-32 text-center font-bold text-white hover:text-amber-400 cursor-pointer"   >Contactos</a>
 
    
 
@@ -204,8 +257,8 @@
 </html>
 
 <script>
-    const button = document.querySelector('header button');
-    const menu = document.querySelector('header nav.lg\\:hidden');
+    const button = document.querySelector('.hamburger');
+    const menu = document.querySelector('.navbar nav.lg\\:hidden');
 
     button.addEventListener('click', () => {
         console.log('Click');
