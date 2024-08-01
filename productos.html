@@ -13,62 +13,103 @@
         background-color: #faf9f6 !important;
     }
 </style>
-<header class="bg-green-800  text-white shadow-lg ">
-    <div class="container mx-auto flex items-center h-24 justify-between">
+<header class="relative navbar bg-green-800 text-white">
+    <!-- Header fijo -->
+    <div
+      class="fixed top-0 left-0 w-full bg-white text-green-800 shadow-lg z-10"
+    >
+      <div class="container mx-auto flex items-center justify-between">
         <a href="" class="flex items-center justify-center">
-            <img class="h-16" src="/src/img/logo.jpg" alt="" />
-            
+          <img
+            class="h-16 transform transition duration-500 hover:scale-110"
+            src="/src/img/sinfondo.png"
+            alt="Logo"
+          />
         </a>
-        <button class="lg:hidden text-white focus:outline-none">
-            <!-- Icono de hamburguesa -->
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
+        <button class="lg:hidden text-white focus:outline-none hamburger">
+          <!-- Icono de hamburguesa -->
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
         </button>
         <nav class="hidden lg:flex font-semibold text-base lg:text-lg">
-            <ul class="mx-auto flex items-center">
-                <li class="p-5 xl:p-8 active hover:bg-green-900  ">
-                    <a href="./index.html" class="font-bold">
-                        <span>Inicio</span>
-                    </a>
-                </li>
-                <li class="p-5 xl:p-8 hover:bg-green-900">
-                    <a href="./productos.html" class="font-bold">
-                        <span>Productos</span>
-                    </a>
-                </li>
-                
-                <li class="p-5 xl:p-8 hover:bg-green-900">
-                    <a href="contactos.html" class="font-bold">
-                        <span>Contactos</span>
-                    </a>
-                </li>
-                <li class="p-5 xl:p-8 hover:bg-green-900">
-                    <a href="./nosotros.html" class="font-bold">
-                        <span>Conocenos</span>
-                    </a>
-                </li>
-            </ul>
+          <ul class="mx-auto flex items-center">
+            <li
+              class="p-5 xl:p-8 active hover:bg-green-900 hover:text-amber-400 rounded-lg"
+            >
+              <a href="./index.html" class="font-bold">
+                <span>Inicio</span>
+              </a>
+            </li>
+            <li
+              class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg"
+            >
+              <a href="./productos.html" class="font-bold">
+                <span>Productos</span>
+              </a>
+            </li>
+            <li
+              class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg"
+            >
+              <a href="contactos.html" class="font-bold">
+                <span>Contactos</span>
+              </a>
+            </li>
+            <li
+              class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg"
+            >
+              <a href="./nosotros.html" class="font-bold">
+                <span>Conocenos</span>
+              </a>
+            </li>
+          </ul>
         </nav>
-        <button class="border border-white rounded-full font-bold px-8 py-2 md:hover hidden lg:block">Contact me</button>
+        <button
+          class="border border-white rounded-full font-bold px-8 py-2 md:hover hidden lg:block hover:bg-green-900 hover:text-amber-400"
+        >
+          Contact me
+        </button>
+      </div>
     </div>
-    <nav class="lg:hidden ">
-        <ul class="flex flex-col items-center justify-end  space-y-4 h-38">
-            <li>
-                <a href="" class="block text-white p-2 text-lg font-bold">Inicio</a>
-            </li>
-            <li>
-                <a href="" class="block text-white p-2 text-lg font-bold">Productos</a>
-            </li>
-            <li>
-                <a href="" class="block text-white p-2 text-lg font-bold">Contactos</a>
-            </li>
-            <li>
-                <a href="" class="block text-white p-2 text-lg font-bold">Conocenos</a>
-            </li>
-        </ul>
+    <!-- Navegación móvil -->
+    <nav class="lg:hidden mt-24">
+      <ul class="flex flex-col items-center justify-end space-y-4 h-38">
+        <li class="hover:text-amber-400 rounded-lg">
+          <a href="" class="block text-white p-2 text-lg font-bold"
+            >Inicio</a
+          >
+        </li>
+        <li>
+          <a href="" class="block text-white p-2 text-lg font-bold"
+            >Productos</a
+          >
+        </li>
+        <li>
+          <a href="" class="block text-white p-2 text-lg font-bold"
+            >Contactos</a
+          >
+        </li>
+        <li>
+          <a href="" class="block text-white p-2 text-lg font-bold"
+            >Conocenos</a
+          >
+        </li>
+      </ul>
     </nav>
-</header>
+  </header>
+  <br>
+  <br>
 <div class="w-full ">
    <!-- component -->
    <div class="container mx-auto mt-8 mb-4">
@@ -220,92 +261,57 @@
             </div>
         </div>
 </div>
-
-    
-      
-<div class="flex items-end w-full min-h-screen ">
-
-    <footer class="w-full text-gray-700 bg-gray-100 body-font ">
-        <div
-            class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
-            <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
-                <a class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
-                    Maderas Eternas
-                </a>
-                <p class="mt-2 text-sm text-gray-500">Design, Code and Ship!</p>
-                <div class="mt-4 ">
-                    <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
-                        <a class="text-gray-500 cursor-pointer hover:text-amber-400" href="https://www.facebook.com/profile.php?id=100089564259776">
-                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                            </svg>
-                        </a>
-                        <a class="ml-3 text-gray-500 cursor-pointer hover:text-amber-400">
-                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                class="w-5 h-5" viewBox="0 0 24 24">
-                                <path
-                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                                </path>
-                            </svg>
-                        </a>
-                        <a class="ml-3 text-gray-500 cursor-pointer hover:text-amber-400">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                            </svg>
-                        </a>
-                        <a class="ml-3 text-gray-500 cursor-pointer hover:text-amber-400">
-                            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path stroke="none"
-                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
-                                </path>
-                                <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                            </svg>
-                        </a>
-                    </span>
-                </div>
-            </div>
-            <div class="flex justify-end flex-wrap  flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
-                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
-                    <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Incio</h2>
-                    <nav class="mb-10 list-none">
-                        <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900">Productos</a>
-                        </li>
-                        <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900">Nosotros</a>
-                        </li>
-                        <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900"></a>
-                        </li>
-                    </nav>
-                </div>
-               
-                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
-                    <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Contact</h2>
-                    <nav class="mb-10 list-none">
-                        <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900">Send a Message</a>
-                        </li>
-                        <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900">Request a Quote</a>
-                        </li>
-                        <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900">+123-456-7890</a>
-                        </li>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        
-    </footer>
-
-</div>
+<a
+href="https://wa.me/0961807765"
+class="fixed bottom-10 right-1"
+target="_blank"
+aria-label="WhatsApp"
+>
+<img
+  src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+  alt="WhatsApp Logo"
+  class="w-10 h-10"
+/>
+</a>
    
-
+<footer class="bg-green-800 text-green-100">
+    <div class="container mx-auto flex flex-col items-center">
+      <!-- Texto de redes sociales -->
+      <div class="text-center mb-6">
+        <p class="text-lg font-semibold">
+          Síguenos en nuestras redes sociales:
+        </p>
+      </div>
+      <!-- Íconos de redes sociales -->
+      <div class="flex space-x-6 mb-6">
+        <a href="https://www.facebook.com/" target="_blank">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+            alt="Facebook"
+            class="social-icon w-8 h-8"
+          />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+            alt="Instagram"
+            class="social-icon w-8 h-8"
+          />
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank">
+          <img
+            src="https://img.freepik.com/vector-premium/logotipo-tik-tok_578229-290.jpg?size=626&ext=jpg"
+            alt="TikTok"
+            class="social-icon w-8 h-8"
+          />
+        </a>
+      </div>
+      <!-- Texto de copyright -->
+      <div class="text-center">
+        <p class="text-sm">&copy; Somos Maderas Eternas.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
 
