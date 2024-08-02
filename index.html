@@ -15,7 +15,7 @@
     </style>
 
     <div class="w-full">
-      <header class="relative navbar bg-green-800 text-white">
+      <header class="relative navbar ">
         <!-- Header fijo -->
         <div
           class="fixed top-0 left-0 w-full bg-white text-green-800 shadow-lg z-10"
@@ -24,11 +24,11 @@
             <a href="" class="flex items-center justify-center">
               <img
                 class="h-16 transform transition duration-500 hover:scale-110"
-                src="/src/img/sinfondo.png"
+                src="./src/img/sinfondo.png"
                 alt="Logo"
               />
             </a>
-            <button class="lg:hidden text-white focus:outline-none hamburger">
+            <button class="lg:hidden text-gray-400 focus:outline-none transition duration-300 ease-in-out hamburger">
               <!-- Icono de hamburguesa -->
               <svg
                 class="w-6 h-6"
@@ -45,6 +45,7 @@
                 ></path>
               </svg>
             </button>
+            
             <nav class="hidden lg:flex font-semibold text-base lg:text-lg">
               <ul class="mx-auto flex items-center">
                 <li
@@ -83,80 +84,83 @@
               Contact me
             </button>
           </div>
+                  <!-- Navegación móvil -->
+          <nav class="lg:hidden mt-4 bg-white ">
+            <ul class="flex flex-col items-center justify-end space-y-4 h-38">
+              <li class="hover:text-amber-400 rounded-lg">
+                <a href="./index.html" class="block  p-2 text-lg font-bold"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a href="./productos.html" class="block  p-2 text-lg font-bold hover:text-amber-400"
+                  >Productos</a
+                >
+              </li>
+              <li>
+                <a href="./nosotros.html" class="block  p-2 text-lg font-bold hover:text-amber-400"
+                  >Conocenos</a
+                >
+              </li>
+              <li>
+                <a href="./contactos.html" class="block  p-2 text-lg font-bold hover:text-amber-400"
+                  >Contactos</a
+                >
+              </li>
+             
+            </ul>
+          </nav>
         </div>
-        <!-- Navegación móvil -->
-        <nav class="lg:hidden mt-24">
-          <ul class="flex flex-col items-center justify-end space-y-4 h-38">
-            <li class="hover:text-amber-400 rounded-lg">
-              <a href="" class="block text-white p-2 text-lg font-bold"
-                >Inicio</a
-              >
-            </li>
-            <li>
-              <a href="" class="block text-white p-2 text-lg font-bold"
-                >Productos</a
-              >
-            </li>
-            <li>
-              <a href="" class="block text-white p-2 text-lg font-bold"
-                >Contactos</a
-              >
-            </li>
-            <li>
-              <a href="" class="block text-white p-2 text-lg font-bold"
-                >Conocenos</a
-              >
-            </li>
-          </ul>
-        </nav>
+
       </header>
 
-      <section class=""></section>
-      <div class="flex bg-white" style="height: 550px">
-        <div
-          class="flex items-center text-center lg:text-left px-8 md:px-8 lg:w-1/2"
-        >
-          <div>
-            <h2
-              class="text-3xl font-semibold text-gray-800 md:text-4xl text-green-800"
+      <section class="">
+        <div class="flex bg-white" style="height: 550px" >
+          <div
+            class="flex items-center text-center lg:text-left px-8 md:px-8 lg:w-1/2"
+          >
+            <div>
+              <h2
+                class="text-3xl font-semibold text-gray-800 md:text-4xl text-green-800"
+              >
+                Maderas <span class="text-amber-400">Eternas</span>
+              </h2>
+              <p class="mt-2 text-sm text-gray-500 md:text-base">
+                Somos una compañía ecuatoriana con 10 años de experiencia dedicada
+                a la construcción y ensamblaje de productos de madera inmunizada
+                con productos ecológicos. Ofrecemos garantías de 10 años en
+                nuestros productos, que cumplen con todos los estándares de
+                calidad y están disponibles a precios razonables. Realizamos
+                entregas en todo el territorio nacional, con instalación
+                inmediata.
+              </p>
+              <div class="flex justify-center lg:justify-start mt-6">
+                <a
+                  class="px-4 py-3 bg-green-800 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800"
+                  href="#"
+                  >Get Started</a
+                >
+                <a
+                  class="mx-4 px-4 py-3 bg-amber-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400"
+                  href="#"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden lg:block lg:w-1/2"
+            style="clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%)"
+          >
+            <div
+              class="h-full bg-cover bg-center transform transition duration-500 hover:scale-110"
+              style="background-image: url('./src/img/banner.jpg')"
             >
-              Maderas <span class="text-amber-400">Eternas</span>
-            </h2>
-            <p class="mt-2 text-sm text-gray-500 md:text-base">
-              Somos una compañía ecuatoriana con 10 años de experiencia dedicada
-              a la construcción y ensamblaje de productos de madera inmunizada
-              con productos ecológicos. Ofrecemos garantías de 10 años en
-              nuestros productos, que cumplen con todos los estándares de
-              calidad y están disponibles a precios razonables. Realizamos
-              entregas en todo el territorio nacional, con instalación
-              inmediata.
-            </p>
-            <div class="flex justify-center lg:justify-start mt-6">
-              <a
-                class="px-4 py-3 bg-green-800 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800"
-                href="#"
-                >Get Started</a
-              >
-              <a
-                class="mx-4 px-4 py-3 bg-amber-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400"
-                href="#"
-                >Learn More</a
-              >
+              <div class="h-full bg-black opacity-25"></div>
             </div>
           </div>
         </div>
-        <div
-          class="hidden lg:block lg:w-1/2"
-          style="clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%)"
-        >
-          <div
-            class="h-full bg-cover bg-center transform transition duration-500 hover:scale-110"
-            style="background-image: url('/src/img/banner.jpg')"
-          >
-            <div class="h-full bg-black opacity-25"></div>
-          </div>
-        </div>
-      </div>
+      </section>
       <!--Razones-->
       <section class="">
         <div class="py-12 bg-white">
@@ -427,21 +431,21 @@
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
               alt="Facebook"
-              class="social-icon w-8 h-8"
+              class="social-icon w-8 h-8 transform transition duration-500 hover:scale-110"
             />
           </a>
           <a href="https://www.instagram.com/" target="_blank">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
               alt="Instagram"
-              class="social-icon w-8 h-8"
+              class="social-icon w-8 h-8 transform transition duration-500 hover:scale-110"
             />
           </a>
           <a href="https://www.tiktok.com/" target="_blank">
             <img
               src="https://img.freepik.com/vector-premium/logotipo-tik-tok_578229-290.jpg?size=626&ext=jpg"
               alt="TikTok"
-              class="social-icon w-8 h-8"
+              class="social-icon w-8 h-8 transform transition duration-500 hover:scale-110"
             />
           </a>
         </div>

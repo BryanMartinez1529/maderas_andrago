@@ -13,7 +13,11 @@
         background-color: #faf9f6 !important;
     }
 </style>
-<header class="relative navbar bg-green-800 text-white">
+
+  <br>
+  <br>
+<div class="w-full ">
+  <header class="relative navbar ">
     <!-- Header fijo -->
     <div
       class="fixed top-0 left-0 w-full bg-white text-green-800 shadow-lg z-10"
@@ -22,11 +26,11 @@
         <a href="" class="flex items-center justify-center">
           <img
             class="h-16 transform transition duration-500 hover:scale-110"
-            src="/src/img/sinfondo.png"
+            src="./src/img/sinfondo.png"
             alt="Logo"
           />
         </a>
-        <button class="lg:hidden text-white focus:outline-none hamburger">
+        <button class="lg:hidden text-gray-400 focus:outline-none transition duration-300 ease-in-out hamburger">
           <!-- Icono de hamburguesa -->
           <svg
             class="w-6 h-6"
@@ -43,6 +47,7 @@
             ></path>
           </svg>
         </button>
+        
         <nav class="hidden lg:flex font-semibold text-base lg:text-lg">
           <ul class="mx-auto flex items-center">
             <li
@@ -81,36 +86,35 @@
           Contact me
         </button>
       </div>
+              <!-- Navegación móvil -->
+      <nav class="lg:hidden mt-4 bg-white ">
+        <ul class="flex flex-col items-center justify-end space-y-4 h-38">
+          <li class="hover:text-amber-400 rounded-lg">
+            <a href="./index.html" class="block  p-2 text-lg font-bold"
+              >Inicio</a
+            >
+          </li>
+          <li>
+            <a href="./productos.html" class="block  p-2 text-lg font-bold hover:text-amber-400"
+              >Productos</a
+            >
+          </li>
+          <li>
+            <a href="./nosotros.html" class="block  p-2 text-lg font-bold hover:text-amber-400"
+              >Conocenos</a
+            >
+          </li>
+          <li>
+            <a href="./contactos.html" class="block  p-2 text-lg font-bold hover:text-amber-400"
+              >Contactos</a
+            >
+          </li>
+         
+        </ul>
+      </nav>
     </div>
-    <!-- Navegación móvil -->
-    <nav class="lg:hidden mt-24">
-      <ul class="flex flex-col items-center justify-end space-y-4 h-38">
-        <li class="hover:text-amber-400 rounded-lg">
-          <a href="" class="block text-white p-2 text-lg font-bold"
-            >Inicio</a
-          >
-        </li>
-        <li>
-          <a href="" class="block text-white p-2 text-lg font-bold"
-            >Productos</a
-          >
-        </li>
-        <li>
-          <a href="" class="block text-white p-2 text-lg font-bold"
-            >Contactos</a
-          >
-        </li>
-        <li>
-          <a href="" class="block text-white p-2 text-lg font-bold"
-            >Conocenos</a
-          >
-        </li>
-      </ul>
-    </nav>
+
   </header>
-  <br>
-  <br>
-<div class="w-full ">
    <!-- component -->
    <div class="container mx-auto mt-8 mb-4">
     <h1 class="text-3xl font-bold text-center text-green-800">Juegos de madera inmunizada</h1>
