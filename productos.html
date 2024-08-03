@@ -17,20 +17,18 @@
   <br>
   <br>
 <div class="w-full ">
-  <header class="relative navbar ">
+  <header class="relative navbar">
     <!-- Header fijo -->
-    <div
-      class="fixed top-0 left-0 w-full bg-white text-green-800 shadow-lg z-10"
-    >
-      <div class="container mx-auto flex items-center justify-between">
-        <a href="" class="flex items-center justify-center">
+    <div class="fixed top-0 left-0 w-full bg-white text-green-800 shadow-lg z-10">
+      <div class="w-full flex items-center justify-between px-4 lg:px-8 py-2">
+        <a href="" class="flex items-center">
           <img
             class="h-16 transform transition duration-500 hover:scale-110"
             src="./src/img/sinfondo.png"
             alt="Logo"
           />
         </a>
-        <button class="lg:hidden text-gray-400 focus:outline-none transition duration-300 ease-in-out hamburger">
+        <button class="lg:hidden text-gray-400 focus:outline-none transition duration-300 ease-in-out hamburger" id="menuButton">
           <!-- Icono de hamburguesa -->
           <svg
             class="w-6 h-6"
@@ -50,70 +48,47 @@
         
         <nav class="hidden lg:flex font-semibold text-base lg:text-lg">
           <ul class="mx-auto flex items-center">
-            <li
-              class="p-5 xl:p-8 active hover:bg-green-900 hover:text-amber-400 rounded-lg"
-            >
+            <li class="p-5 xl:p-8 active hover:bg-green-900 hover:text-amber-400 rounded-lg">
               <a href="./index.html" class="font-bold">
                 <span>Inicio</span>
               </a>
             </li>
-            <li
-              class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg"
-            >
-              <a href="./productos.html" class="font-bold">
-                <span>Productos</span>
-              </a>
-            </li>
-            <li
-              class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg"
-            >
-              <a href="contactos.html" class="font-bold">
-                <span>Contactos</span>
-              </a>
-            </li>
-            <li
-              class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg"
-            >
+            <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg">
               <a href="./nosotros.html" class="font-bold">
                 <span>Conocenos</span>
               </a>
             </li>
+            <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg">
+              <a href="./productos.html" class="font-bold">
+                <span>Productos</span>
+              </a>
+            </li>          
+            <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg">
+              <a href="contactos.html" class="font-bold">
+                <span>Contactos</span>
+              </a>
+            </li>
           </ul>
-        </nav>
-        <button
-          class="border border-white rounded-full font-bold px-8 py-2 md:hover hidden lg:block hover:bg-green-900 hover:text-amber-400"
-        >
-          Contact me
-        </button>
+        </nav>            
       </div>
-              <!-- Navegación móvil -->
-      <nav class="lg:hidden mt-4 bg-white hidden">
+      <!-- Navegación móvil -->
+      <nav class="lg:hidden mt-4 bg-white hidden" id="mobileMenu">
         <ul class="flex flex-col items-center justify-end space-y-4 h-38">
           <li class="hover:text-amber-400 rounded-lg">
-            <a href="./index.html" class="block  p-2 text-lg font-bold"
-              >Inicio</a
-            >
+            <a href="./index.html" class="block p-2 text-lg font-bold">Inicio</a>
+          </li>              
+          <li>
+            <a href="./nosotros.html" class="block p-2 text-lg font-bold hover:text-amber-400">Conocenos</a>
           </li>
           <li>
-            <a href="./productos.html" class="block  p-2 text-lg font-bold hover:text-amber-400"
-              >Productos</a
-            >
+            <a href="./productos.html" class="block p-2 text-lg font-bold hover:text-amber-400">Productos</a>
           </li>
           <li>
-            <a href="./nosotros.html" class="block  p-2 text-lg font-bold hover:text-amber-400"
-              >Conocenos</a
-            >
+            <a href="./contactos.html" class="block p-2 text-lg font-bold hover:text-amber-400">Contactos</a>
           </li>
-          <li>
-            <a href="./contactos.html" class="block  p-2 text-lg font-bold hover:text-amber-400"
-              >Contactos</a
-            >
-          </li>
-         
         </ul>
       </nav>
     </div>
-
   </header>
    <!-- component -->
    <div class="container mx-auto mt-8 mb-4">
@@ -320,11 +295,10 @@ aria-label="WhatsApp"
 </html>
 
 <script>
-    const button = document.querySelector('header button');
-    const menu = document.querySelector('header nav.lg\\:hidden');
+  const button = document.getElementById('menuButton');
+  const menu = document.getElementById('mobileMenu');
 
-    button.addEventListener('click', () => {
-        console.log('Click');
-        menu.classList.toggle('hidden');
-    });
+  button.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
 </script>

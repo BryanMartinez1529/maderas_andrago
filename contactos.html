@@ -1,222 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
-  </head>
-
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
   <style>
-      body {
-        background-color: #faf9f6 !important;
-      }
-    </style>
-  <body>
-    
-    <header class="relative navbar ">
-      <!-- Header fijo -->
-      <div
-        class="fixed top-0 left-0 w-full bg-white text-green-800 shadow-lg z-10"
-      >
-        <div class="container mx-auto flex items-center justify-between">
-          <a href="" class="flex items-center justify-center">
-            <img
-              class="h-16 transform transition duration-500 hover:scale-110"
-              src="./src/img/sinfondo.png"
-              alt="Logo"
-            />
-          </a>
-          <button class="lg:hidden text-gray-400 focus:outline-none transition duration-300 ease-in-out hamburger">
-            <!-- Icono de hamburguesa -->
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
-          
-          <nav class="hidden lg:flex font-semibold text-base lg:text-lg">
-            <ul class="mx-auto flex items-center">
-              <li
-                class="p-5 xl:p-8 active hover:bg-green-900 hover:text-amber-400 rounded-lg"
-              >
-                <a href="./index.html" class="font-bold">
-                  <span>Inicio</span>
-                </a>
-              </li>
-              <li
-                class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg"
-              >
-                <a href="./productos.html" class="font-bold">
-                  <span>Productos</span>
-                </a>
-              </li>
-              <li
-                class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg"
-              >
-                <a href="contactos.html" class="font-bold">
-                  <span>Contactos</span>
-                </a>
-              </li>
-              <li
-                class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg"
-              >
-                <a href="./nosotros.html" class="font-bold">
-                  <span>Conocenos</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <button
-            class="border border-white rounded-full font-bold px-8 py-2 md:hover hidden lg:block hover:bg-green-900 hover:text-amber-400"
+    body {
+      background-color: #faf9f6 !important;
+    }
+  </style>
+</head>
+<body>
+  <header class="relative navbar">
+    <!-- Header fijo -->
+    <div class="fixed top-0 left-0 w-full bg-white text-green-800 shadow-lg z-10">
+      <div class="w-full flex items-center justify-between px-4 lg:px-8 py-2">
+        <a href="" class="flex items-center">
+          <img
+            class="h-16 transform transition duration-500 hover:scale-110"
+            src="./src/img/sinfondo.png"
+            alt="Logo"
+          />
+        </a>
+        <button class="lg:hidden text-gray-400 focus:outline-none transition duration-300 ease-in-out hamburger" id="menuButton">
+          <!-- Icono de hamburguesa -->
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            Contact me
-          </button>
-        </div>
-                <!-- Navegación móvil -->
-        <nav class="lg:hidden mt-4 bg-white hidden">
-          <ul class="flex flex-col items-center justify-end space-y-4 h-38">
-            <li class="hover:text-amber-400 rounded-lg">
-              <a href="./index.html" class="block  p-2 text-lg font-bold"
-                >Inicio</a
-              >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+        
+        <nav class="hidden lg:flex font-semibold text-base lg:text-lg">
+          <ul class="mx-auto flex items-center">
+            <li class="p-5 xl:p-8 active hover:bg-green-900 hover:text-amber-400 rounded-lg">
+              <a href="./index.html" class="font-bold">
+                <span>Inicio</span>
+              </a>
             </li>
-            <li>
-              <a href="./productos.html" class="block  p-2 text-lg font-bold hover:text-amber-400"
-                >Productos</a
-              >
+            <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg">
+              <a href="./nosotros.html" class="font-bold">
+                <span>Conocenos</span>
+              </a>
             </li>
-            <li>
-              <a href="./nosotros.html" class="block  p-2 text-lg font-bold hover:text-amber-400"
-                >Conocenos</a
-              >
+            <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg">
+              <a href="./productos.html" class="font-bold">
+                <span>Productos</span>
+              </a>
+            </li>          
+            <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg">
+              <a href="contactos.html" class="font-bold">
+                <span>Contactos</span>
+              </a>
             </li>
-            <li>
-              <a href="./contactos.html" class="block  p-2 text-lg font-bold hover:text-amber-400"
-                >Contactos</a
-              >
-            </li>
-           
           </ul>
-        </nav>
+        </nav>            
       </div>
+      <!-- Navegación móvil -->
+      <nav class="lg:hidden mt-4 bg-white hidden" id="mobileMenu">
+        <ul class="flex flex-col items-center justify-end space-y-4 h-38">
+          <li class="hover:text-amber-400 rounded-lg">
+            <a href="./index.html" class="block p-2 text-lg font-bold">Inicio</a>
+          </li>              
+          <li>
+            <a href="./nosotros.html" class="block p-2 text-lg font-bold hover:text-amber-400">Conocenos</a>
+          </li>
+          <li>
+            <a href="./productos.html" class="block p-2 text-lg font-bold hover:text-amber-400">Productos</a>
+          </li>
+          <li>
+            <a href="./contactos.html" class="block p-2 text-lg font-bold hover:text-amber-400">Contactos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    
+  <br>
+  <br>
+  <br>
 
-    </header>
-    <br>
-    <br>
-    <br>
-
-    <div class="container mx-auto mt-8">
-      <h1 class="text-3xl font-bold text-center text-green-800">
-        Estamos ubicados
-      </h1>
-      <div class="flex flex-col md:flex-row">
-        <div class="w-full md:w-1/2 p-4 flex flex-col items-center">
-          <div class="h-64 flex items-center justify-center">
-            <img src="src/img/logo.jpg" alt="logo madera eterna inmunizada" />
-          </div>
-          <h2 class="text-2xl font-bold text-center text-green-800">
-            Horario de Atención
-          </h2>
-          <div>
-            <div
-              class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center"
-            >
-              <div class="text-green-800 text-xl font-bold text-center">
-                Lunes a Viernes
-              </div>
-              <div class="text-gray-700 bg-center">09:00 AM - 04:00 PM</div>
-            </div>
+  <div class="container mx-auto mt-8">
+    <h1 class="text-3xl font-bold text-center text-green-800">Estamos ubicados</h1>
+    <div class="flex flex-col md:flex-row">
+      <div class="w-full md:w-1/2 p-4 flex flex-col items-center">
+        <div class="h-64 flex items-center justify-center">
+          <img src="src/img/logo.jpg" alt="logo madera eterna inmunizada" />
+        </div>
+        <h2 class="text-2xl font-bold text-center text-green-800">Horario de Atención</h2>
+        <div>
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center">
+            <div class="text-green-800 text-xl font-bold text-center">Lunes a Viernes</div>
+            <div class="text-gray-700 bg-center">09:00 AM - 04:00 PM</div>
           </div>
         </div>
-        <div class="w-full md:w-1/2 p-4">
+      </div>
+      <div class="w-full md:w-1/2 p-4">
+        <div class="relative w-full h-64 md:h-80">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6034340617252!2d-78.64103002841105!3d-0.5946581352542544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d455ab1ae8a0d1%3A0x94fab2d49ab8c63!2sMaderas%20Eternas.%20Andrango%20e%20Hijos%20Cia.%20Ltda.!5e0!3m2!1ses!2sec!4v1722472693010!5m2!1ses!2sec"
-            width="600"
-            height="450"
-            style="border: 0"
+            style="border: 0; width: 100%; height: 100%;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-          <div class="text-center px-4">
-            <p class="text-3xl font-bold text-center">
-              Estamos ubicados en la Provincia de Pichincha, Cantón Mejía,
-              Parroquia El Chaupi.
-            </p>
-          </div>
+        </div>
+        <div class="text-center px-4">
+          <p class="text-3xl font-bold text-center">Estamos ubicados en la Provincia de Pichincha, Cantón Mejía, Parroquia El Chaupi.</p>
         </div>
       </div>
     </div>
-    <a
-      href="https://wa.me/0961807765"
-      class="fixed bottom-10 right-1"
-      target="_blank"
-      aria-label="WhatsApp"
-    >
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-        alt="WhatsApp Logo"
-        class="w-10 h-10"
-      />
-    </a>
-    <footer class="bg-green-800 text-green-100">
-      <div class="container mx-auto flex flex-col items-center">
-        <!-- Texto de redes sociales -->
-        <div class="text-center mb-6">
-          <p class="text-lg font-semibold">
-            Síguenos en nuestras redes sociales:
-          </p>
-        </div>
-        <!-- Íconos de redes sociales -->
-        <div class="flex space-x-6 mb-6">
-          <a href="https://www.facebook.com/" target="_blank">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-              alt="Facebook"
-              class="social-icon w-8 h-8"
-            />
-          </a>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-              alt="Instagram"
-              class="social-icon w-8 h-8"
-            />
-          </a>
-          <a href="https://www.tiktok.com/" target="_blank">
-            <img
-              src="https://img.freepik.com/vector-premium/logotipo-tik-tok_578229-290.jpg?size=626&ext=jpg"
-              alt="TikTok"
-              class="social-icon w-8 h-8"
-            />
-          </a>
-        </div>
-        <!-- Texto de copyright -->
-        <div class="text-center">
-          <p class="text-sm">&copy; Somos Maderas Eternas.</p>
-        </div>
+  </div>
+
+  <a href="https://wa.me/0961807765" class="fixed bottom-10 right-1" target="_blank" aria-label="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="w-10 h-10" />
+  </a>
+
+  <footer class="bg-green-800 text-green-100">
+    <div class="container mx-auto flex flex-col items-center">
+      <!-- Texto de redes sociales -->
+      <div class="text-center mb-6">
+        <p class="text-lg font-semibold">Síguenos en nuestras redes sociales:</p>
       </div>
-    </footer>
-  </body>
+      <!-- Íconos de redes sociales -->
+      <div class="flex space-x-6 mb-6">
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-icon w-8 h-8" />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon w-8 h-8" />
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank">
+          <img src="https://img.freepik.com/vector-premium/logotipo-tik-tok_578229-290.jpg?size=626&ext=jpg" alt="TikTok" class="social-icon w-8 h-8" />
+        </a>
+      </div>
+      <!-- Texto de copyright -->
+      <div class="text-center">
+        <p class="text-sm">&copy; Somos Maderas Eternas.</p>
+      </div>
+    </div>
+  </footer>
+
+ 
+</body>
 </html>
-
 <script>
-  const button = document.querySelector("header button");
-  const menu = document.querySelector("header nav.lg\\:hidden");
+  const button = document.getElementById('menuButton');
+  const menu = document.getElementById('mobileMenu');
 
-  button.addEventListener("click", () => {
-    console.log("Click");
-    menu.classList.toggle("hidden");
+  button.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
   });
 </script>

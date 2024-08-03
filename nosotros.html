@@ -5,199 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
+    <style>
+        body {
+            background-color: #faf9f6 !important;
+        }
+    </style>
 </head>
-<body>
-    <!-- component -->
-<style>
-    body {
-        background-color: #faf9f6 !important;
-    }
-</style>
+<body class="flex flex-col min-h-screen">
+    <div class="flex-1">
+        <header class="relative navbar">
+            <!-- Header fijo -->
+            <div class="fixed top-0 left-0 w-full bg-white text-green-800 shadow-lg z-10">
+                <div class="w-full flex items-center justify-between px-4 lg:px-8 py-2">
+                    <a href="" class="flex items-center">
+                        <img
+                            class="h-16 transform transition duration-500 hover:scale-110"
+                            src="./src/img/sinfondo.png"
+                            alt="Logo"
+                        />
+                    </a>
+                    <button class="lg:hidden text-gray-400 focus:outline-none transition duration-300 ease-in-out hamburger" id="menuButton">
+                        <!-- Icono de hamburguesa -->
+                        <svg
+                            class="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"
+                            ></path>
+                        </svg>
+                    </button>
+                    
+                    <nav class="hidden lg:flex font-semibold text-base lg:text-lg">
+                        <ul class="mx-auto flex items-center">
+                            <li class="p-5 xl:p-8 active hover:bg-green-900 hover:text-amber-400 rounded-lg">
+                                <a href="./index.html" class="font-bold">
+                                    <span>Inicio</span>
+                                </a>
+                            </li>
+                            <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg">
+                                <a href="./nosotros.html" class="font-bold">
+                                    <span>Conocenos</span>
+                                </a>
+                            </li>
+                            <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg">
+                                <a href="./productos.html" class="font-bold">
+                                    <span>Productos</span>
+                                </a>
+                            </li>          
+                            <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg">
+                                <a href="contactos.html" class="font-bold">
+                                    <span>Contactos</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>            
+                </div>
+                <!-- Navegación móvil -->
+                <nav class="lg:hidden mt-4 bg-white hidden" id="mobileMenu">
+                    <ul class="flex flex-col items-center justify-end space-y-4 h-38">
+                        <li class="hover:text-amber-400 rounded-lg">
+                            <a href="./index.html" class="block p-2 text-lg font-bold">Inicio</a>
+                        </li>              
+                        <li>
+                            <a href="./nosotros.html" class="block p-2 text-lg font-bold hover:text-amber-400">Conocenos</a>
+                        </li>
+                        <li>
+                            <a href="./productos.html" class="block p-2 text-lg font-bold hover:text-amber-400">Productos</a>
+                        </li>
+                        <li>
+                            <a href="./contactos.html" class="block p-2 text-lg font-bold hover:text-amber-400">Contactos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-
-<div class="w-full">
-  <header class="relative navbar ">
-    <!-- Header fijo -->
-    <div
-      class="fixed top-0 left-0 w-full bg-white text-green-800 shadow-lg z-10"
+        <section class="mt-24 flex flex-col md:flex-row flex-1">
+            <div class="bg-white p-6 flex-1">
+                <h3>Videos</h3>
+                <video width="650" height="300" controls autoplay muted>
+                    <source src="./src/videos/video-nosotros.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="bg-white p-6 flex-1">
+                <h2 class="text-center font-bold text-green-800">Nuestra Historia</h2>
+                <p class="text-justify">Desde sus inicios, la empresa Maderas Eternas fundada por el señor Marcelo Andrango, ha tenido la visión de combinar la tradición de la madera con la innovación, seguridad y duración, logrando crecer y consolidarse en el mercado ecuatoriano a lo largo de los años.
+                    En sus primeros años, Maderas Eternas se centró en la creación de juegos de madera sencillos. Sin embargo, con el paso del tiempo, la empresa ha expandido su línea de productos para incluir juegos educativos, decorativos y hasta juegos personalizados para diferentes clientes.
+                    En 2013, Maderas Eternas implementó el proceso de inmunización de la madera que revolucionó sus procesos, ofreciendo productos más seguros y duraderos, con una garantía de hasta 10 años. Esta innovación permitió a la empresa expandirse a nuevos mercados y consolidarse en todas partes del Ecuador.
+                    Hoy en día, Maderas Eternas es sinónimo de juegos de madera inmunizada de alta calidad, con presencia en todas las regiones del Ecuador y una amplia gama de productos que satisfacen las necesidades de clientes de todas las edades.
+                    A medida que la empresa continúa creciendo y evolucionando, sigue comprometida con su misión de ofrecer productos innovadores, seguros y sostenibles que fomenten la creatividad, el aprendizaje y la diversión.</p>
+            </div>
+        </section>
+    </div>
+    
+    <a
+        href="https://wa.me/0961807765"
+        class="fixed bottom-10 right-1"
+        target="_blank"
+        aria-label="WhatsApp"
     >
-      <div class="container mx-auto flex items-center justify-between">
-        <a href="" class="flex items-center justify-center">
-          <img
-            class="h-16 transform transition duration-500 hover:scale-110"
-            src="./src/img/sinfondo.png"
-            alt="Logo"
-          />
-        </a>
-        <button class="lg:hidden text-gray-400 focus:outline-none transition duration-300 ease-in-out hamburger">
-          <!-- Icono de hamburguesa -->
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            ></path>
-          </svg>
-        </button>
-        
-        <nav class="hidden lg:flex font-semibold text-base lg:text-lg">
-          <ul class="mx-auto flex items-center">
-            <li
-              class="p-5 xl:p-8 active hover:bg-green-900 hover:text-amber-400 rounded-lg"
-            >
-              <a href="./index.html" class="font-bold">
-                <span>Inicio</span>
-              </a>
-            </li>
-            <li
-              class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg"
-            >
-              <a href="./productos.html" class="font-bold">
-                <span>Productos</span>
-              </a>
-            </li>
-            <li
-              class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg"
-            >
-              <a href="contactos.html" class="font-bold">
-                <span>Contactos</span>
-              </a>
-            </li>
-            <li
-              class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg"
-            >
-              <a href="./nosotros.html" class="font-bold">
-                <span>Conocenos</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <button
-          class="border border-white rounded-full font-bold px-8 py-2 md:hover hidden lg:block hover:bg-green-900 hover:text-amber-400"
-        >
-          Contact me
-        </button>
-      </div>
-              <!-- Navegación móvil -->
-      <nav class="lg:hidden mt-4 bg-white hidden ">
-        <ul class="flex flex-col items-center justify-end space-y-4 h-38">
-          <li class="hover:text-amber-400 rounded-lg">
-            <a href="./index.html" class="block  p-2 text-lg font-bold"
-              >Inicio</a
-            >
-          </li>
-          <li>
-            <a href="./productos.html" class="block  p-2 text-lg font-bold hover:text-amber-400"
-              >Productos</a
-            >
-          </li>
-          <li>
-            <a href="./nosotros.html" class="block  p-2 text-lg font-bold hover:text-amber-400"
-              >Conocenos</a
-            >
-          </li>
-          <li>
-            <a href="./contactos.html" class="block  p-2 text-lg font-bold hover:text-amber-400"
-              >Contactos</a
-            >
-          </li>
-         
-        </ul>
-      </nav>
-    </div>
-  
-  </header>
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+            alt="WhatsApp Logo"
+            class="w-10 h-10"
+        />
+    </a>
+    
+    <footer class="bg-green-800 text-green-100">
+        <div class="container mx-auto flex flex-col items-center">
+            <!-- Texto de redes sociales -->
+            <div class="text-center mb-6">
+                <p class="text-lg font-semibold">
+                    Síguenos en nuestras redes sociales:
+                </p>
+            </div>
+            <!-- Íconos de redes sociales -->
+            <div class="flex space-x-6 mb-6">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                        alt="Facebook"
+                        class="social-icon w-8 h-8"
+                    />
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                        alt="Instagram"
+                        class="social-icon w-8 h-8"
+                    />
+                </a>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <img
+                        src="https://img.freepik.com/vector-premium/logotipo-tik-tok_578229-290.jpg?size=626&ext=jpg"
+                        alt="TikTok"
+                        class="social-icon w-8 h-8"
+                    />
+                </a>
+            </div>
+            <!-- Texto de copyright -->
+            <div class="text-center">
+                <p class="text-sm">&copy; Somos Maderas Eternas.</p>
+            </div>
+        </div>
+    </footer>
 
-  <section class="mt-24 flex flex-col md:flex-row" style="height: 500px;">
-      <div class="bg-white p-6  flex-1">
-          <h3>Videos</h3>
-          <video width="650" height="300" controls>
-            <source src="./src/videos/video-nosotros.mp4" type="video/mp4">
-            <source src="movie.ogg" type="video/ogg">
-          Your browser does not support the video tag.
-          </video>
-      </div>
-      <div class="bg-white p-6  flex-1">
-        <h2 class="text-center font-bold text-green-800">Nuestra Historia</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non explicabo sed exercitationem magnam odio a dolorum nulla ut distinctio consequatur asperiores, illo sint necessitatibus enim quo voluptatibus minima vero. Atque.</p>
-      </div>
-  </section>
-</div>
-
-
-  
-
-
-
-
-
-<a
-href="https://wa.me/0961807765"
-class="fixed bottom-10 right-1"
-target="_blank"
-aria-label="WhatsApp"
->
-<img
-  src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-  alt="WhatsApp Logo"
-  class="w-10 h-10"
-/>
-</a>
-<footer class="bg-green-800 text-green-100">
-    <div class="container mx-auto flex flex-col items-center">
-      <!-- Texto de redes sociales -->
-      <div class="text-center mb-6">
-        <p class="text-lg font-semibold">
-          Síguenos en nuestras redes sociales:
-        </p>
-      </div>
-      <!-- Íconos de redes sociales -->
-      <div class="flex space-x-6 mb-6">
-        <a href="https://www.facebook.com/" target="_blank">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-            alt="Facebook"
-            class="social-icon w-8 h-8"
-          />
-        </a>
-        <a href="https://www.instagram.com/" target="_blank">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-            alt="Instagram"
-            class="social-icon w-8 h-8"
-          />
-        </a>
-        <a href="https://www.tiktok.com/" target="_blank">
-          <img
-            src="https://img.freepik.com/vector-premium/logotipo-tik-tok_578229-290.jpg?size=626&ext=jpg"
-            alt="TikTok"
-            class="social-icon w-8 h-8"
-          />
-        </a>
-      </div>
-      <!-- Texto de copyright -->
-      <div class="text-center">
-        <p class="text-sm">&copy; Somos Maderas Eternas.</p>
-      </div>
-    </div>
-  </footer>
-
+    
 </body>
 </html>
-
 <script>
-    const button = document.querySelector('header button');
-    const menu = document.querySelector('header nav.lg\\:hidden');
+  const button = document.getElementById('menuButton');
+  const menu = document.getElementById('mobileMenu');
 
-    button.addEventListener('click', () => {
-        console.log('Click');
-        menu.classList.toggle('hidden');
-    });
+  button.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+  });
 </script>
