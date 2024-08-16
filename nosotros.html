@@ -87,7 +87,7 @@
             </div>
         </header>
 
-        <section class="mt-24 flex flex-col md:flex-row flex-1">
+        <section class="mt-24 flex flex-col md:flex-row flex-1" style="">
             <div class="bg-white p-6 flex-1">
               <h1 class="text-center font-bold text-green-800">Nuestra Historia</h1>
               <p class="text-justify ">Desde sus inicios, la empresa Maderas Eternas fundada por el señor Marcelo Andrango, ha tenido la visión de combinar la tradición de la madera con la innovación, seguridad y duración, logrando crecer y consolidarse en el mercado ecuatoriano a lo largo de los años.
@@ -98,55 +98,76 @@
               </p>
             </div>
             <div class="bg-white p-6 flex-1">
-              <h1 class="text-center text-green-800 font-bold">Proyecto Actual</h1>
-              <br>
-                <video width="650" height="300" controls autoplay muted>
-                    <source src="./src/videos/video-nosotros.mp4" type="video/mp4">
+                <h1 class="text-center text-green-800 font-bold">Proyecto Actual</h1>
+                <br>
+                <video id="videoProyecto" width="650" height="300" controls autoplay>
+                    <source src="./src/videos/video_empresa.mp4" type="video/mp4">
                     <source src="movie.ogg" type="video/ogg">
-                    El video no esta disponible por el momento.
+                    El video no está disponible por el momento.
                 </video>                
             </div>
         </section>
     </div>
     <div class="bg-white p-6 flex-1">
         <h1 class="text-center text-green-800 font-bold">
-            Personal Administrativo
+            PERSONAL DE TRABAJO
         </h1>
         <br>
-        <div class="flex items-center justify-center space-x-4 mb-4">
-            <div class="relative h-[500px] w-[300px]">
+        <div class="flex flex-col md:flex-row items-center justify-center md:space-x-4 space-y-4 md:space-y-0 mb-4">
+            <div class="relative h-[400px] w-[250px] md:h-[500px] md:w-[300px]">
                 <img src="src/iamgen_prueba.png" alt="Gerente" class="h-full w-full object-cover rounded-xl">
-                <div class="absolute bottom-0 w-full bg-black bg-opacity-60 text-white  py-4 rounded-b-xl text-center">
-                    <h3 class="font-bold text-2xl">Gerente</h3>
-                    <div class="paragraph-l">Ing. Industrial Jhonatan Pilachanga</div>
+                <div class="absolute bottom-0 w-full bg-black bg-opacity-60 text-white py-4 rounded-b-xl text-center">
+                    <h3 class="font-bold text-xl md:text-2xl">Gerente General</h3>
+                    <div class="paragraph-l">Marcelo Andrango</div>
                 </div>
             </div>
-            <div class="relative h-[500px] w-[300px]">
+            <div class="relative h-[400px] w-[250px] md:h-[500px] md:w-[300px]">
                 <img src="src/iamgen_prueba.png" alt="Subgerente" class="h-full w-full object-cover rounded-xl">
-                <div class="absolute bottom-0 w-full bg-black bg-opacity-60 text-white px-9 py-4 rounded-b-xl text-center">
-                    <h3 class="font-bold text-2xl">Subgerente</h3>
-                    <div class="paragraph-l">Ing. Industrial Maria Perez</div>
+                <div class="absolute bottom-0 w-full bg-black bg-opacity-60 text-white py-4 rounded-b-xl text-center">
+                    <h3 class="font-bold text-xl md:text-2xl">Jefe de Producción</h3>
+                    <div class="paragraph-l">René Andrango</div>
                 </div>
             </div>
-            <div class="relative h-[500px] w-[300px]">
+            <div class="relative h-[400px] w-[250px] md:h-[500px] md:w-[300px]">
                 <img src="src/iamgen_prueba.png" alt="Jefe de Operaciones" class="h-full w-full object-cover rounded-xl">
-                <div class="absolute bottom-0 w-full bg-black bg-opacity-60 text-white px-9 py-4 rounded-b-xl text-center">
-                    <h3 class="font-bold text-2xl">Jefe de Operaciones</h3>
-                    <div class="paragraph-l">Ing. Industrial Juan Garcia</div>
+                <div class="absolute bottom-0 w-full bg-black bg-opacity-60 text-white py-4 rounded-b-xl text-center">
+                    <h3 class="font-bold text-xl md:text-2xl">Analista de Procesos</h3>
+                    <div class="paragraph-l">Ing. David Pilachanga</div>
                 </div>
             </div>
         </div>
         <div class="flex items-center justify-center">
-            <div class="relative inline-block h-auto">
+            <div class="relative h-auto w-full max-w-[600px]">
                 <img src="src/pruen_horizontal.png" alt="Personal de Planta" class="h-full w-full object-cover rounded-xl">
-                <div class="absolute bottom-0 w-full bg-black bg-opacity-60 text-white px-9 py-4 rounded-b-xl text-center">
-                    <h3 class="font-bold text-2xl">Personal de Planta</h3>
+                <div class="absolute bottom-0 w-full bg-black bg-opacity-60 text-white py-4 rounded-b-xl text-center">
+                    <h3 class="font-bold text-xl md:text-2xl">Personal Operativo</h3>
                     <div class="paragraph-l">Nuestro equipo de producción trabajando con dedicación y esmero.</div>
                 </div>
             </div>
         </div>
-        
     </div>
+    <div class="bg-white p-6">
+           
+        <div class="grid grid-cols-[1fr_2fr_1fr] gap-4 mt-6">
+            <!-- Fila 3 -->
+            <div class="flex justify-center items-center">
+                <img src="src/img/banner.jpg" alt="Imagen Izquierda 3" class="h-full w-full object-cover rounded-xl">
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <div class="text-4xl font-bold text-gray-800">18 de Agosto, 2024</div>
+                <div class="text-2xl font-semibold text-green-800 mt-2">Juego de Madera</div>
+                <div class="text-lg text-black mt-2">El juego fue entregado en al municipio de Quito.</div>
+                <div class="text-md text-black mt-2">El juego cuenta con un sube y baja, una escalera.</div>
+            </div>
+            <div class="flex justify-center items-center">
+                <img src="src/img/sinfondo.png" alt="Imagen Derecha 3" class="h-auto w-full max-w-[100px] rounded-xl">
+            </div>
+        </div>
+              
+    </div>
+    <br>
+    
+
     
        
     
@@ -210,4 +231,13 @@
   button.addEventListener('click', () => {
       menu.classList.toggle('hidden');
   });
+  document.addEventListener('DOMContentLoaded', function() {
+        var video = document.getElementById('videoProyecto');
+        
+        // Detener el autoplay después de la primera reproducción
+        video.addEventListener('ended', function() {
+            video.removeAttribute('autoplay');
+        });
+    });
 </script>
+
