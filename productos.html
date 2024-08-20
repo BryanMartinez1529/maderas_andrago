@@ -1,364 +1,1324 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- component -->
-<style>
-    body {
+    <style>
+      body {
         background-color: #faf9f6 !important;
-    }
-</style>
+      }
+    </style>
 
-  <br>
-  <br>
-<div class="w-full ">
-  <header class="relative navbar">
-    <!-- Header fijo -->
-    <div class="fixed top-0 left-0 w-full bg-white text-green-800 shadow-lg z-10">
-      <div class="w-full flex items-center justify-between px-4 lg:px-8 py-2">
-        <a href="" class="flex items-center">
-          <img
-            class="h-16 transform transition duration-500 hover:scale-110"
-            src="./src/img/sinfondo.png"
-            alt="Logo"
-          />
-        </a>
-        <button class="lg:hidden text-gray-400 focus:outline-none transition duration-300 ease-in-out hamburger" id="menuButton">
-          <!-- Icono de hamburguesa -->
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+    <br />
+    <br />
+    <div class="w-full">
+      <header class="relative navbar">
+        <!-- Header fijo -->
+        <div
+          class="fixed top-0 left-0 w-full bg-white text-green-800 shadow-lg z-10"
+        >
+          <div
+            class="w-full flex items-center justify-between px-4 lg:px-8 py-2"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            ></path>
-          </svg>
-        </button>
-        
-        <nav class="hidden lg:flex font-semibold text-base lg:text-lg">
-          <ul class="mx-auto flex items-center">
-            <li class="p-5 xl:p-8 active hover:bg-green-900 hover:text-amber-400 rounded-lg">
-              <a href="./index.html" class="font-bold">
-                <span>Inicio</span>
-              </a>
-            </li>
-            <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg">
-              <a href="./nosotros.html" class="font-bold">
-                <span>Conocenos</span>
-              </a>
-            </li>
-            <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg">
-              <a href="./productos.html" class="font-bold">
-                <span>Productos</span>
-              </a>
-            </li>          
-            <li class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg">
-              <a href="contactos.html" class="font-bold">
-                <span>Contactos</span>
-              </a>
-            </li>
-          </ul>
-        </nav>            
-      </div>
-      <!-- Navegación móvil -->
-      <nav class="lg:hidden mt-4 bg-white hidden" id="mobileMenu">
-        <ul class="flex flex-col items-center justify-end space-y-4 h-38">
-          <li class="hover:text-amber-400 rounded-lg">
-            <a href="./index.html" class="block p-2 text-lg font-bold">Inicio</a>
-          </li>              
-          <li>
-            <a href="./nosotros.html" class="block p-2 text-lg font-bold hover:text-amber-400">Conocenos</a>
-          </li>
-          <li>
-            <a href="./productos.html" class="block p-2 text-lg font-bold hover:text-amber-400">Productos</a>
-          </li>
-          <li>
-            <a href="./contactos.html" class="block p-2 text-lg font-bold hover:text-amber-400">Contactos</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-   <!-- component -->
-   <div class="container mx-auto mt-8 mb-4">
-    <br>
-    <h1 class="text-3xl font-bold text-center text-green-800">Juegos de madera inmunizada</h1>
-    </div>
-<div class="p-8 flex flex-wrap items-center justify-center">
-    <div class="container">
-        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-          <div class="p-4 md:w-1/3 sm:mb-0 mb-6 shadow-lg rounded pl-4">
-            <div class="rounded-lg overflow-hidden flex items-center justify-center" style="aspect-ratio: 4 / 3;">
-                <img alt="content" class="object-contain object-center w-full h-full" src="src/img/productos/juego_castillo_madera_inmunizada.png" style="height: 400px; width: 500;">
-            </div>
-            <h2 class="text-xl font-medium title-font text-black mt-5">Juego en madera eterna</h2>
-            <p class="text-base leading-relaxed mt-2">El juego cuenta con un sube y baja</p>
-            <a href="#" class="text-indigo-400 inline-flex items-center mt-3" id="learnMore">Especificaciones Técnicas
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
+            <a href="" class="flex items-center">
+              <img
+                class="h-16 transform transition duration-500 hover:scale-110"
+                src="./src/img/sinfondo.png"
+                alt="Logo"
+              />
             </a>
-        </div>
-        
-        <!-- Modal -->
-        <div id="modal" class="fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center hidden z-50">
-          <div class="bg-white rounded-lg overflow-hidden shadow-lg max-w-lg w-full">
-              <div class="p-6">
-                  <h2 class="text-center text-2xl font-bold text-green-800 mb-4">Especificaciones Técnicas</h2>
-                  <table class="table-auto w-full border-collapse bg-white shadow-lg">
-                      <thead class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-                          <tr>
-                              <th class="py-3 px-6 text-left">Especificación</th>
-                              <th class="py-3 px-6 text-left">Detalle</th>
-                          </tr>
-                      </thead>
-                      <tbody class="text-gray-700 text-sm font-light">
-                          <tr class="border-b border-gray-200 hover:bg-gray-100">
-                              <td class="py-3 px-6 text-left">Materia Prima</td>
-                              <td class="py-3 px-6 text-left">Eucalipto</td>
-                          </tr>
-                          <tr class="border-b border-gray-200 hover:bg-gray-100">
-                              <td class="py-3 px-6 text-left">Dimensiones</td>
-                              <td class="py-3 px-6 text-left">3m x 4m</td>
-                          </tr>
-                          <tr class="border-b border-gray-200 hover:bg-gray-100">
-                              <td class="py-3 px-6 text-left">Elementos</td>
-                              <td class="py-3 px-6 text-left">Sube y baja</td>
-                          </tr>
-                          <tr class="border-b border-gray-200 hover:bg-gray-100">
-                              <td class="py-3 px-6 text-left">Color</td>
-                              <td class="py-3 px-6 text-left">Negro</td>
-                          </tr>
-                      </tbody>
-                  </table>
-                  
-                  <div class="mt-4 flex justify-end">
-                      <button id="closeModal" class="bg-red-500 text-white px-4 py-2 rounded">Cerrar</button>
-                  </div>
-              </div>
+            <button
+              class="lg:hidden text-gray-400 focus:outline-none transition duration-300 ease-in-out hamburger"
+              id="menuButton"
+            >
+              <!-- Icono de hamburguesa -->
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+
+            <nav class="hidden lg:flex font-semibold text-base lg:text-lg">
+              <ul class="mx-auto flex items-center">
+                <li
+                  class="p-5 xl:p-8 active hover:bg-green-900 hover:text-amber-400 rounded-lg"
+                >
+                  <a href="./index.html" class="font-bold">
+                    <span>Inicio</span>
+                  </a>
+                </li>
+                <li
+                  class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg"
+                >
+                  <a href="./nosotros.html" class="font-bold">
+                    <span>Conocenos</span>
+                  </a>
+                </li>
+                <li
+                  class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg"
+                >
+                  <a href="./productos.html" class="font-bold">
+                    <span>Productos</span>
+                  </a>
+                </li>
+                <li
+                  class="p-5 xl:p-8 hover:bg-green-900 hover:text-amber-400 rounded-lg"
+                >
+                  <a href="contactos.html" class="font-bold">
+                    <span>Contactos</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
-      </div>
-      
-            
-            <!-- Tabla oculta inicialmente -->
-            
-            
-            <div class="p-8 md:w-1/3 sm:mb-0 mb-6 shadow-lg">
-                <div class="rounded-lg overflow-hidden flex items-center justify-center" style="aspect-ratio: 4 / 3;">
-                    <img alt="content" class="object-contain object-center w-full h-full" src="src/img/productos/juego_infantil_madera_eterna_inmunizada.png" style="height: 400px; width: 500;">
-                </div>
-                <h2 class="text-xl font-medium title-font text-black mt-5">Juego en madera eterna</h2>
-                <p class="text-base leading-relaxed mt-2">El juego cuenta con tunel</p>
-                <a href="#" class="text-indigo-400 inline-flex items-center mt-3">Especificaciones Técnicas
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                </a>
-            </div>
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6 shadow-lg rounded pl-4 ">
-                <div class="rounded-lg overflow-hidden flex items-center justify-center" style="aspect-ratio: 4 / 3;">
-                    <img alt="content" class="object-contain object-center w-full h-full" src="src/img/productos/juego_madera_eterna_madera_inmunizada.png" style="height: 400px; width: 500;">
-                </div>
-                <h2 class="text-xl font-medium title-font text-black mt-5">Juego en madera eterna</h2>
-                <p class="text-base leading-relaxed mt-2">El juego cuenta con un sube y baja</p>
-                <a href="#" class="text-indigo-400 inline-flex items-center mt-3">Learn More
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                </a>
-            </div>
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6 shadow-lg rounded pl-4 ">
-                <div class="rounded-lg overflow-hidden flex items-center justify-center" style="aspect-ratio: 4 / 3;">
-                    <img alt="content" class="object-contain object-center w-full h-full" src="src/img/productos/juego_madera_inmunizada1.png" style="height: 400px; width: 500;">
-                </div>
-                <h2 class="text-xl font-medium title-font text-black mt-5">Juego en madera eterna</h2>
-                <p class="text-base leading-relaxed mt-2">El juego cuenta con un sube y baja</p>
-                <a href="#" class="text-indigo-400 inline-flex items-center mt-3">Learn More
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                </a>
-            </div>
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6 shadow-lg rounded pl-4 ">
-                <div class="rounded-lg overflow-hidden flex items-center justify-center" style="aspect-ratio: 4 / 3;">
-                    <img alt="content" class="object-contain object-center w-full h-full" src="src/img/productos/juego_resabladaera_madera_inmunizada.png" style="height: 400px; width: 500;">
-                </div>
-                <h2 class="text-xl font-medium title-font text-black mt-5">Juego en madera eterna</h2>
-                <p class="text-base leading-relaxed mt-2">El juego cuenta con un sube y baja</p>
-                <a href="#" class="text-indigo-400 inline-flex items-center mt-3">Learn More
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                </a>
-            </div>
-            
+          <!-- Navegación móvil -->
+          <nav class="lg:hidden mt-4 bg-white hidden" id="mobileMenu">
+            <ul class="flex flex-col items-center justify-end space-y-4 h-38">
+              <li class="hover:text-amber-400 rounded-lg">
+                <a href="./index.html" class="block p-2 text-lg font-bold"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./nosotros.html"
+                  class="block p-2 text-lg font-bold hover:text-amber-400"
+                  >Conocenos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./productos.html"
+                  class="block p-2 text-lg font-bold hover:text-amber-400"
+                  >Productos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./contactos.html"
+                  class="block p-2 text-lg font-bold hover:text-amber-400"
+                  >Contactos</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
-    </div>
-</div>
-<div class="container mx-auto mt-8 mb-4">
-    <h1 class="text-3xl font-bold text-center text-green-800">Casas</h1>
-    </div>
-    <div class="p-8 flex flex-wrap items-center justify-center">
+      </header>
+      <!-- component -->
+      <div class="container mx-auto mt-8 mb-4">
+        <br />
+        <h1 class="text-3xl font-bold text-center text-green-800">
+          Juegos de madera inmunizada
+        </h1>
+      </div>
+      <div class="p-8 flex flex-wrap items-center justify-center">
         <div class="container">
-            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-                <div class="p-4 md:w-1/3 sm:mb-0 mb-6 shadow-lg rounded pl-4 ">
-                    <div class="rounded-lg overflow-hidden flex items-center justify-center" style="aspect-ratio: 4 / 3;">
-                        <img alt="content" class="object-contain object-center w-full h-full" src="src/img/productos/casa_gradas_madera_inmunizada.png" style="height: 400px; width: 500;">
-                    </div>
-                    <h2 class="text-xl font-medium title-font text-black mt-5">Casa</h2>
-                    <p class="text-base leading-relaxed mt-2">El juego cuenta con un sube y baja</p>
-                    <a href="#" class="text-indigo-400 inline-flex items-center mt-3">Learn More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
-                </div>
-                <div class="p-8 md:w-1/3 sm:mb-0 mb-6 shadow-lg">
-                    <div class="rounded-lg overflow-hidden flex items-center justify-center" style="aspect-ratio: 4 / 3;">
-                        <img alt="content" class="object-contain object-center w-full h-full" src="src/img/productos/casa_madera_inmunizada.png" style="height: 400px; width: 500;">
-                    </div>
-                    <h2 class="text-xl font-medium title-font text-black mt-5">Casa</h2>
-                    <p class="text-base leading-relaxed mt-2">El juego cuenta con tunel</p>
-                    <a href="#" class="text-indigo-400 inline-flex items-center mt-3">Learn More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
-                </div>
+          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <!-- Tarjeta del producto con ID para el modal #2 -->
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6 shadow-lg rounded pl-4">
+              <div
+                class="rounded-lg overflow-hidden flex items-center justify-center"
+                style="aspect-ratio: 4 / 3"
+              >
+                <img
+                  alt="content"
+                  class="object-contain object-center w-full h-full"
+                  src="src/img/productos/juego_castillo_madera_inmunizada.png"
+                  style="height: 400px; width: 500"
+                />
+              </div>
+              <h2 class="text-xl font-medium title-font text-black mt-5">
+                Juego en madera eterna
+              </h2>
+
+              <a
+                href="#"
+                class="text-indigo-400 inline-flex items-center mt-3"
+                id="learnMore"
+                >Especificaciones Técnicas
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
             </div>
-        </div>
-    </div>
-    <div class="container mx-auto mt-8 mb-4">
-        <h1 class="text-3xl font-bold text-center text-green-800">Mesas y mesedoras en madera inmunizada</h1>
-        </div>
-        <div class="p-8 flex flex-wrap items-center justify-center">
-            <div class="container">
-                <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-                    <div class="p-4 md:w-1/3 sm:mb-0 mb-6 shadow-lg rounded pl-4 ">
-                        <div class="rounded-lg overflow-hidden flex items-center justify-center" style="aspect-ratio: 4 / 3;">
-                            <img alt="content" class="object-contain object-center w-full h-full" src="src/img/productos/mesa_madera_inmunizada.png" style="height: 400px; width: 500;">
-                        </div>
-                        <h2 class="text-xl font-medium title-font text-black mt-5">Juego en madera eterna</h2>
-                        <p class="text-base leading-relaxed mt-2">El juego cuenta con un sube y baja</p>
-                        <a href="#" class="text-indigo-400 inline-flex items-center mt-3">Learn More
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="p-8 md:w-1/3 sm:mb-0 mb-6 shadow-lg">
-                        <div class="rounded-lg overflow-hidden flex items-center justify-center" style="aspect-ratio: 4 / 3;">
-                            <img alt="content" class="object-contain object-center w-full h-full" src="src/img/productos/mesedora_madera.png" style="height: 400px; width: 500;">
-                        </div>
-                        <h2 class="text-xl font-medium title-font text-black mt-5">Mesedora</h2>
-                        <p class="text-base leading-relaxed mt-2">El juego cuenta con tunel</p>
-                        <a href="#" class="text-indigo-400 inline-flex items-center mt-3">Learn More
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="p-4 md:w-1/3 sm:mb-0 mb-6 shadow-lg rounded pl-4 ">
-                        <div class="rounded-lg overflow-hidden flex items-center justify-center" style="aspect-ratio: 4 / 3;">
-                            <img alt="content" class="object-contain object-center w-full h-full" src="src/img/productos/mesedora_madera_inmunizada_eterna.png">
-                        </div>
-                        <h2 class="text-xl font-medium title-font text-black mt-5">Mesedora</h2>
-                        <p class="text-base leading-relaxed mt-2">El juego cuenta con un sube y baja</p>
-                        <a href="#" class="text-indigo-400 inline-flex items-center mt-3">Learn More
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>                    
+
+            <!-- Modal para el Producto #0 -->
+            <div
+              id="modal"
+              class="fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center hidden z-50"
+            >
+              <div
+                class="bg-white rounded-lg overflow-hidden shadow-lg max-w-lg w-full"
+              >
+                <div class="p-6">
+                  <h2
+                    class="text-center text-2xl font-bold text-green-800 mb-4"
+                  >
+                    Especificaciones Técnicas
+                  </h2>
+                  <table
+                    class="table-auto w-full border-collapse bg-white shadow-lg"
+                  >
+                    <thead
+                      class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+                    >
+                      <tr>
+                        <th class="py-3 px-6 text-left">Especificación</th>
+                        <th class="py-3 px-6 text-left">Detalle</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-gray-700 text-sm font-light">
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Materia Prima</td>
+                        <td class="py-3 px-6 text-left">Eucalipto</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Dimensiones</td>
+                        <td class="py-3 px-6 text-left">3m x 4m</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Elementos</td>
+                        <td class="py-3 px-6 text-left">Sube y baja</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Color</td>
+                        <td class="py-3 px-6 text-left">Negro</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="mt-4 flex justify-end">
+                    <button
+                      id="closeModal"
+                      class="bg-red-500 text-white px-4 py-2 rounded"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
                 </div>
+              </div>
             </div>
+
+            <!-- Tarjeta del producto con ID para el modal #1 -->
+
+            <div class="p-8 md:w-1/3 sm:mb-0 mb-6 shadow-lg">
+              <div
+                class="rounded-lg overflow-hidden flex items-center justify-center"
+                style="aspect-ratio: 4 / 3"
+              >
+                <img
+                  alt="content"
+                  class="object-contain object-center w-full h-full"
+                  src="src/img/productos/juego_infantil_madera_eterna_inmunizada.png"
+                  style="height: 400px; width: 500px"
+                />
+              </div>
+              <h2 class="text-xl font-medium title-font text-black mt-5">
+                Juego en madera eterna
+              </h2>
+              <a
+                href="#"
+                class="text-indigo-400 inline-flex items-center mt-3"
+                id="learnMore1"
+                >Especificaciones Técnicas
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Modal para el primer producto -->
+            <div
+              id="modal1"
+              class="fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center hidden z-50"
+            >
+              <div
+                class="bg-white rounded-lg overflow-hidden shadow-lg max-w-lg w-full"
+              >
+                <div class="p-6">
+                  <h2
+                    class="text-center text-2xl font-bold text-green-800 mb-4"
+                  >
+                    Especificaciones Técnicas
+                  </h2>
+                  <table
+                    class="table-auto w-full border-collapse bg-white shadow-lg"
+                  >
+                    <thead
+                      class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+                    >
+                      <tr>
+                        <th class="py-3 px-6 text-left">Especificación</th>
+                        <th class="py-3 px-6 text-left">Detalle</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-gray-700 text-sm font-light">
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Materia Prima</td>
+                        <td class="py-3 px-6 text-left">Eucalipto</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Dimensiones</td>
+                        <td class="py-3 px-6 text-left">3m x 4m</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Elementos</td>
+                        <td class="py-3 px-6 text-left">Sube y baja</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Color</td>
+                        <td class="py-3 px-6 text-left">Negro</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="mt-4 flex justify-end">
+                    <button
+                      id="closeModal1"
+                      class="bg-red-500 text-white px-4 py-2 rounded"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta del producto con ID para el modal #2 -->
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6 shadow-lg rounded pl-4">
+              <div
+                class="rounded-lg overflow-hidden flex items-center justify-center"
+                style="aspect-ratio: 4 / 3"
+              >
+                <img
+                  alt="content"
+                  class="object-contain object-center w-full h-full"
+                  src="src/img/productos/juego_madera_inmunizada1.png"
+                  style="height: 400px; width: 500px"
+                />
+              </div>
+              <h2 class="text-xl font-medium title-font text-black mt-5">
+                Juego en madera eterna
+              </h2>
+              <a
+                href="#"
+                class="text-indigo-400 inline-flex items-center mt-3"
+                id="learnMore2"
+                >Especificaciones Técnicas
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Modal para el producto #2 -->
+            <div
+              id="modal2"
+              class="fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center hidden z-50"
+            >
+              <div
+                class="bg-white rounded-lg overflow-hidden shadow-lg max-w-lg w-full"
+              >
+                <div class="p-6">
+                  <h2
+                    class="text-center text-2xl font-bold text-green-800 mb-4"
+                  >
+                    Especificaciones Técnicas
+                  </h2>
+                  <table
+                    class="table-auto w-full border-collapse bg-white shadow-lg"
+                  >
+                    <thead
+                      class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+                    >
+                      <tr>
+                        <th class="py-3 px-6 text-left">Especificación</th>
+                        <th class="py-3 px-6 text-left">Detalle</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-gray-700 text-sm font-light">
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Materia Prima</td>
+                        <td class="py-3 px-6 text-left">Eucalipto</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Dimensiones</td>
+                        <td class="py-3 px-6 text-left">3m x 4m</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Elementos</td>
+                        <td class="py-3 px-6 text-left">Sube y baja</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Color</td>
+                        <td class="py-3 px-6 text-left">Negro</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="mt-4 flex justify-end">
+                    <button
+                      id="closeModal2"
+                      class="bg-red-500 text-white px-4 py-2 rounded"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta del producto con ID para el modal #3 -->
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6 shadow-lg rounded pl-4">
+              <div
+                class="rounded-lg overflow-hidden flex items-center justify-center"
+                style="aspect-ratio: 4 / 3"
+              >
+                <img
+                  alt="content"
+                  class="object-contain object-center w-full h-full"
+                  src="src/img/productos/juego_madera_inmunizada1.png"
+                  style="height: 400px; width: 500px"
+                />
+              </div>
+              <h2 class="text-xl font-medium title-font text-black mt-5">
+                Juego en madera eterna
+              </h2>
+              <a
+                href="#"
+                class="text-indigo-400 inline-flex items-center mt-3"
+                id="learnMore3"
+                >Especificaciones Técnicas
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Modal para el producto #3 -->
+            <div
+              id="modal3"
+              class="fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center hidden z-50"
+            >
+              <div
+                class="bg-white rounded-lg overflow-hidden shadow-lg max-w-lg w-full"
+              >
+                <div class="p-6">
+                  <h2
+                    class="text-center text-2xl font-bold text-green-800 mb-4"
+                  >
+                    Especificaciones Técnicas
+                  </h2>
+                  <table
+                    class="table-auto w-full border-collapse bg-white shadow-lg"
+                  >
+                    <thead
+                      class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+                    >
+                      <tr>
+                        <th class="py-3 px-6 text-left">Especificación</th>
+                        <th class="py-3 px-6 text-left">Detalle</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-gray-700 text-sm font-light">
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Materia Prima</td>
+                        <td class="py-3 px-6 text-left">Eucalipto</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Dimensiones</td>
+                        <td class="py-3 px-6 text-left">3m x 4m</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Elementos</td>
+                        <td class="py-3 px-6 text-left">Sube y baja</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Color</td>
+                        <td class="py-3 px-6 text-left">Negro</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="mt-4 flex justify-end">
+                    <button
+                      id="closeModal3"
+                      class="bg-red-500 text-white px-4 py-2 rounded"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta del producto con ID para el modal #4 -->
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6 shadow-lg rounded pl-4">
+              <div
+                class="rounded-lg overflow-hidden flex items-center justify-center"
+                style="aspect-ratio: 4 / 3"
+              >
+                <img
+                  alt="content"
+                  class="object-contain object-center w-full h-full"
+                  src="src/img/productos/juego_resabladaera_madera_inmunizada.png"
+                  style="height: 400px; width: 500px"
+                />
+              </div>
+              <h2 class="text-xl font-medium title-font text-black mt-5">
+                Juego en madera eterna
+              </h2>
+              <a
+                href="#"
+                class="text-indigo-400 inline-flex items-center mt-3"
+                id="learnMore4"
+                >Especificaciones Técnicas
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Modal para el producto #4 -->
+            <div
+              id="modal4"
+              class="fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center hidden z-50"
+            >
+              <div
+                class="bg-white rounded-lg overflow-hidden shadow-lg max-w-lg w-full"
+              >
+                <div class="p-6">
+                  <h2
+                    class="text-center text-2xl font-bold text-green-800 mb-4"
+                  >
+                    Especificaciones Técnicas
+                  </h2>
+                  <table
+                    class="table-auto w-full border-collapse bg-white shadow-lg"
+                  >
+                    <thead
+                      class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+                    >
+                      <tr>
+                        <th class="py-3 px-6 text-left">Especificación</th>
+                        <th class="py-3 px-6 text-left">Detalle</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-gray-700 text-sm font-light">
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Materia Prima</td>
+                        <td class="py-3 px-6 text-left">Eucalipto</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Dimensiones</td>
+                        <td class="py-3 px-6 text-left">3m x 4m</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Elementos</td>
+                        <td class="py-3 px-6 text-left">Sube y baja</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Color</td>
+                        <td class="py-3 px-6 text-left">Negro</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="mt-4 flex justify-end">
+                    <button
+                      id="closeModal4"
+                      class="bg-red-500 text-white px-4 py-2 rounded"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-</div>
-<a
-href="https://wa.me/0961807765"
-class="fixed bottom-10 right-1"
-target="_blank"
-aria-label="WhatsApp"
->
-<img
-  src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-  alt="WhatsApp Logo"
-  class="w-10 h-10"
-/>
-</a>
-   
-<footer class="bg-green-800 text-green-100">
-    <div class="container mx-auto flex flex-col items-center">
-      <!-- Texto de redes sociales -->
-      <div class="text-center mb-6">
-        <p class="text-lg font-semibold">
-          Síguenos en nuestras redes sociales:
-        </p>
       </div>
-      <!-- Íconos de redes sociales -->
-      <div class="flex space-x-6 mb-6">
-        <a href="https://www.facebook.com/" target="_blank">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-            alt="Facebook"
-            class="social-icon w-8 h-8"
-          />
-        </a>
-        <a href="https://www.instagram.com/" target="_blank">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-            alt="Instagram"
-            class="social-icon w-8 h-8"
-          />
-        </a>
-        <a href="https://www.tiktok.com/" target="_blank">
-          <img
-            src="https://img.freepik.com/vector-premium/logotipo-tik-tok_578229-290.jpg?size=626&ext=jpg"
-            alt="TikTok"
-            class="social-icon w-8 h-8"
-          />
-        </a>
+      <div class="container mx-auto mt-8 mb-4">
+        <h1 class="text-3xl font-bold text-center text-green-800">Casas</h1>
       </div>
-      <!-- Texto de copyright -->
-      <div class="text-center">
-        <p class="text-sm">&copy; Somos Maderas Eternas.</p>
+      <div class="p-8 flex flex-wrap items-center justify-center">
+        <div class="container">
+          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <!-- Tarjeta del producto con ID para el modal #5 -->
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6 shadow-lg rounded pl-4">
+              <div
+                class="rounded-lg overflow-hidden flex items-center justify-center"
+                style="aspect-ratio: 4 / 3"
+              >
+                <img
+                  alt="content"
+                  class="object-contain object-center w-full h-full"
+                  src="src/img/productos/casa_gradas_madera_inmunizada.png"
+                  style="height: 400px; width: 500px"
+                />
+              </div>
+              <h2 class="text-xl font-medium title-font text-black mt-5">
+                Casa
+              </h2>
+              <a
+                href="#"
+                class="text-indigo-400 inline-flex items-center mt-3"
+                id="learnMore5"
+                >Especificaciones Técnicas
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Modal para el producto #5 -->
+            <div
+              id="modal5"
+              class="fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center hidden z-50"
+            >
+              <div
+                class="bg-white rounded-lg overflow-hidden shadow-lg max-w-lg w-full"
+              >
+                <div class="p-6">
+                  <h2
+                    class="text-center text-2xl font-bold text-green-800 mb-4"
+                  >
+                    Especificaciones Técnicas
+                  </h2>
+                  <table
+                    class="table-auto w-full border-collapse bg-white shadow-lg"
+                  >
+                    <thead
+                      class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+                    >
+                      <tr>
+                        <th class="py-3 px-6 text-left">Especificación</th>
+                        <th class="py-3 px-6 text-left">Detalle</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-gray-700 text-sm font-light">
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Materia Prima</td>
+                        <td class="py-3 px-6 text-left">Eucalipto</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Dimensiones</td>
+                        <td class="py-3 px-6 text-left">3m x 4m</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Elementos</td>
+                        <td class="py-3 px-6 text-left">Gradas</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Color</td>
+                        <td class="py-3 px-6 text-left">Natural</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="mt-4 flex justify-end">
+                    <button
+                      id="closeModal5"
+                      class="bg-red-500 text-white px-4 py-2 rounded"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta del producto con ID para el modal #6 -->
+            <div class="p-8 md:w-1/3 sm:mb-0 mb-6 shadow-lg">
+              <div
+                class="rounded-lg overflow-hidden flex items-center justify-center"
+                style="aspect-ratio: 4 / 3"
+              >
+                <img
+                  alt="content"
+                  class="object-contain object-center w-full h-full"
+                  src="src/img/productos/casa_madera_inmunizada.png"
+                  style="height: 400px; width: 500px"
+                />
+              </div>
+              <h2 class="text-xl font-medium title-font text-black mt-5">
+                Casa
+              </h2>
+              <a
+                href="#"
+                class="text-indigo-400 inline-flex items-center mt-3"
+                id="learnMore6"
+                >Especificaciones Técnicas
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Modal para el producto #6 -->
+            <div
+              id="modal6"
+              class="fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center hidden z-50"
+            >
+              <div
+                class="bg-white rounded-lg overflow-hidden shadow-lg max-w-lg w-full"
+              >
+                <div class="p-6">
+                  <h2
+                    class="text-center text-2xl font-bold text-green-800 mb-4"
+                  >
+                    Especificaciones Técnicas
+                  </h2>
+                  <table
+                    class="table-auto w-full border-collapse bg-white shadow-lg"
+                  >
+                    <thead
+                      class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+                    >
+                      <tr>
+                        <th class="py-3 px-6 text-left">Especificación</th>
+                        <th class="py-3 px-6 text-left">Detalle</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-gray-700 text-sm font-light">
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Materia Prima</td>
+                        <td class="py-3 px-6 text-left">Eucalipto</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Dimensiones</td>
+                        <td class="py-3 px-6 text-left">3m x 4m</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Elementos</td>
+                        <td class="py-3 px-6 text-left">
+                          Escaleras y barandales
+                        </td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Color</td>
+                        <td class="py-3 px-6 text-left">Natural</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="mt-4 flex justify-end">
+                    <button
+                      id="closeModal6"
+                      class="bg-red-500 text-white px-4 py-2 rounded"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto mt-8 mb-4">
+        <h1 class="text-3xl font-bold text-center text-green-800">
+          Mesas y mesedoras en madera inmunizada
+        </h1>
+      </div>
+      <div class="p-8 flex flex-wrap items-center justify-center">
+        <div class="container">
+          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <!-- Tarjeta del producto con ID para el modal #7 -->
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6 shadow-lg rounded pl-4">
+              <div
+                class="rounded-lg overflow-hidden flex items-center justify-center"
+                style="aspect-ratio: 4 / 3"
+              >
+                <img
+                  alt="content"
+                  class="object-contain object-center w-full h-full"
+                  src="src/img/productos/mesa_madera_inmunizada.png"
+                  style="height: 400px; width: 500px"
+                />
+              </div>
+              <h2 class="text-xl font-medium title-font text-black mt-5">
+                Juego en madera eterna
+              </h2>
+              <a
+                href="#"
+                class="text-indigo-400 inline-flex items-center mt-3"
+                id="learnMore7"
+                >Especificaciones Técnicas
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Modal para el producto #7 -->
+            <div
+              id="modal7"
+              class="fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center hidden z-50"
+            >
+              <div
+                class="bg-white rounded-lg overflow-hidden shadow-lg max-w-lg w-full"
+              >
+                <div class="p-6">
+                  <h2
+                    class="text-center text-2xl font-bold text-green-800 mb-4"
+                  >
+                    Especificaciones Técnicas
+                  </h2>
+                  <table
+                    class="table-auto w-full border-collapse bg-white shadow-lg"
+                  >
+                    <thead
+                      class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+                    >
+                      <tr>
+                        <th class="py-3 px-6 text-left">Especificación</th>
+                        <th class="py-3 px-6 text-left">Detalle</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-gray-700 text-sm font-light">
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Materia Prima</td>
+                        <td class="py-3 px-6 text-left">Eucalipto</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Dimensiones</td>
+                        <td class="py-3 px-6 text-left">1.5m x 1m</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Elementos</td>
+                        <td class="py-3 px-6 text-left">Mesa</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Color</td>
+                        <td class="py-3 px-6 text-left">Natural</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="mt-4 flex justify-end">
+                    <button
+                      id="closeModal7"
+                      class="bg-red-500 text-white px-4 py-2 rounded"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta del producto con ID para el modal #8 -->
+            <div class="p-8 md:w-1/3 sm:mb-0 mb-6 shadow-lg">
+              <div
+                class="rounded-lg overflow-hidden flex items-center justify-center"
+                style="aspect-ratio: 4 / 3"
+              >
+                <img
+                  alt="content"
+                  class="object-contain object-center w-full h-full"
+                  src="src/img/productos/mesedora_madera.png"
+                  style="height: 400px; width: 500px"
+                />
+              </div>
+              <h2 class="text-xl font-medium title-font text-black mt-5">
+                Mesedora
+              </h2>
+              <a
+                href="#"
+                class="text-indigo-400 inline-flex items-center mt-3"
+                id="learnMore8"
+                >Especificaciones Técnicas
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Modal para el producto #8 -->
+            <div
+              id="modal8"
+              class="fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center hidden z-50"
+            >
+              <div
+                class="bg-white rounded-lg overflow-hidden shadow-lg max-w-lg w-full"
+              >
+                <div class="p-6">
+                  <h2
+                    class="text-center text-2xl font-bold text-green-800 mb-4"
+                  >
+                    Especificaciones Técnicas
+                  </h2>
+                  <table
+                    class="table-auto w-full border-collapse bg-white shadow-lg"
+                  >
+                    <thead
+                      class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+                    >
+                      <tr>
+                        <th class="py-3 px-6 text-left">Especificación</th>
+                        <th class="py-3 px-6 text-left">Detalle</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-gray-700 text-sm font-light">
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Materia Prima</td>
+                        <td class="py-3 px-6 text-left">Eucalipto</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Dimensiones</td>
+                        <td class="py-3 px-6 text-left">1.2m x 0.8m</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Elementos</td>
+                        <td class="py-3 px-6 text-left">Mesedora</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Color</td>
+                        <td class="py-3 px-6 text-left">Natural</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="mt-4 flex justify-end">
+                    <button
+                      id="closeModal8"
+                      class="bg-red-500 text-white px-4 py-2 rounded"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta del producto con ID para el modal #9 -->
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6 shadow-lg rounded pl-4">
+              <div
+                class="rounded-lg overflow-hidden flex items-center justify-center"
+                style="aspect-ratio: 4 / 3"
+              >
+                <img
+                  alt="content"
+                  class="object-contain object-center w-full h-full"
+                  src="src/img/productos/mesedora_madera_inmunizada_eterna.png"
+                  style="height: 400px; width: 500px"
+                />
+              </div>
+              <h2 class="text-xl font-medium title-font text-black mt-5">
+                Mesedora
+              </h2>
+              <a
+                href="#"
+                class="text-indigo-400 inline-flex items-center mt-3"
+                id="learnMore9"
+                >Especificaciones Técnicas
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Modal para el producto #9 -->
+            <div
+              id="modal9"
+              class="fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center hidden z-50"
+            >
+              <div
+                class="bg-white rounded-lg overflow-hidden shadow-lg max-w-lg w-full"
+              >
+                <div class="p-6">
+                  <h2
+                    class="text-center text-2xl font-bold text-green-800 mb-4"
+                  >
+                    Especificaciones Técnicas
+                  </h2>
+                  <table
+                    class="table-auto w-full border-collapse bg-white shadow-lg"
+                  >
+                    <thead
+                      class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+                    >
+                      <tr>
+                        <th class="py-3 px-6 text-left">Especificación</th>
+                        <th class="py-3 px-6 text-left">Detalle</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-gray-700 text-sm font-light">
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Materia Prima</td>
+                        <td class="py-3 px-6 text-left">Eucalipto</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Dimensiones</td>
+                        <td class="py-3 px-6 text-left">1.2m x 0.8m</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Elementos</td>
+                        <td class="py-3 px-6 text-left">Mesedora</td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">Color</td>
+                        <td class="py-3 px-6 text-left">Natural</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="mt-4 flex justify-end">
+                    <button
+                      id="closeModal9"
+                      class="bg-red-500 text-white px-4 py-2 rounded"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
-</body>
+    <a
+      href="https://wa.me/0961807765"
+      class="fixed bottom-10 right-1"
+      target="_blank"
+      aria-label="WhatsApp"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp Logo"
+        class="w-10 h-10"
+      />
+    </a>
+
+    <footer class="bg-green-800 text-green-100">
+      <div class="container mx-auto flex flex-col items-center">
+        <!-- Texto de redes sociales -->
+        <div class="text-center mb-6">
+          <p class="text-lg font-semibold">
+            Síguenos en nuestras redes sociales:
+          </p>
+        </div>
+        <!-- Íconos de redes sociales -->
+        <div class="flex space-x-6 mb-6">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+              alt="Facebook"
+              class="social-icon w-8 h-8"
+            />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+              alt="Instagram"
+              class="social-icon w-8 h-8"
+            />
+          </a>
+          <a href="https://www.tiktok.com/" target="_blank">
+            <img
+              src="https://img.freepik.com/vector-premium/logotipo-tik-tok_578229-290.jpg?size=626&ext=jpg"
+              alt="TikTok"
+              class="social-icon w-8 h-8"
+            />
+          </a>
+        </div>
+        <!-- Texto de copyright -->
+        <div class="text-center">
+          <p class="text-sm">&copy; Somos Maderas Eternas.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
 
 <script>
-  const button = document.getElementById('menuButton');
-  const menu = document.getElementById('mobileMenu');
+  const button = document.getElementById("menuButton");
+  const menu = document.getElementById("mobileMenu");
 
-  button.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
+  button.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
   });
-  document.getElementById('learnMore').addEventListener('click', function(event) {
-        event.preventDefault();
-        document.getElementById('modal').classList.remove('hidden');
+  document
+    .getElementById("learnMore")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("modal").classList.remove("hidden");
     });
 
-    document.getElementById('closeModal').addEventListener('click', function() {
-        document.getElementById('modal').classList.add('hidden');
+  document.getElementById("closeModal").addEventListener("click", function () {
+    document.getElementById("modal").classList.add("hidden");
+  });
+
+  // Cerrar el modal al hacer clic fuera del contenido
+  document.getElementById("modal").addEventListener("click", function (event) {
+    if (event.target === this) {
+      this.classList.add("hidden");
+    }
+  });
+  document
+    .getElementById("learnMore1")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("modal1").classList.remove("hidden");
     });
 
-    // Cerrar el modal al hacer clic fuera del contenido
-    document.getElementById('modal').addEventListener('click', function(event) {
-        if (event.target === this) {
-            this.classList.add('hidden');
-        }
+  document.getElementById("closeModal1").addEventListener("click", function () {
+    document.getElementById("modal1").classList.add("hidden");
+  });
+
+  // Cerrar el modal al hacer clic fuera del contenido
+  document.getElementById("modal1").addEventListener("click", function (event) {
+    if (event.target === this) {
+      this.classList.add("hidden");
+    }
+  });
+  // Abrir el modal para el producto 2
+  document
+    .getElementById("learnMore2")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("modal2").classList.remove("hidden");
     });
+
+  // Cerrar el modal para el producto 2
+  document.getElementById("closeModal2").addEventListener("click", function () {
+    document.getElementById("modal2").classList.add("hidden");
+  });
+
+  // Cerrar el modal al hacer clic fuera del contenido
+  document.getElementById("modal2").addEventListener("click", function (event) {
+    if (event.target === this) {
+      this.classList.add("hidden");
+    }
+  });
+  // Abrir el modal para el producto #3
+  document
+    .getElementById("learnMore3")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("modal3").classList.remove("hidden");
+    });
+
+  // Cerrar el modal #3
+  document.getElementById("closeModal3").addEventListener("click", function () {
+    document.getElementById("modal3").classList.add("hidden");
+  });
+
+  // Cerrar el modal #3 al hacer clic fuera del contenido
+  document.getElementById("modal3").addEventListener("click", function (event) {
+    if (event.target === this) {
+      this.classList.add("hidden");
+    }
+  });
+  // Abrir el modal para el producto #4
+  document
+    .getElementById("learnMore4")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("modal4").classList.remove("hidden");
+    });
+
+  // Cerrar el modal #4
+  document.getElementById("closeModal4").addEventListener("click", function () {
+    document.getElementById("modal4").classList.add("hidden");
+  });
+
+  // Cerrar el modal #4 al hacer clic fuera del contenido
+  document.getElementById("modal4").addEventListener("click", function (event) {
+    if (event.target === this) {
+      this.classList.add("hidden");
+    }
+  });
+  // Abrir el modal para el producto #5
+  document
+    .getElementById("learnMore5")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("modal5").classList.remove("hidden");
+    });
+
+  // Cerrar el modal #5
+  document.getElementById("closeModal5").addEventListener("click", function () {
+    document.getElementById("modal5").classList.add("hidden");
+  });
+
+  // Cerrar el modal #5 al hacer clic fuera del contenido
+  document.getElementById("modal5").addEventListener("click", function (event) {
+    if (event.target === this) {
+      this.classList.add("hidden");
+    }
+  });
+  // Abrir el modal para el producto #6
+  document
+    .getElementById("learnMore6")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("modal6").classList.remove("hidden");
+    });
+
+  // Cerrar el modal #6
+  document.getElementById("closeModal6").addEventListener("click", function () {
+    document.getElementById("modal6").classList.add("hidden");
+  });
+
+  // Cerrar el modal #6 al hacer clic fuera del contenido
+  document.getElementById("modal6").addEventListener("click", function (event) {
+    if (event.target === this) {
+      this.classList.add("hidden");
+    }
+  });
+  // Abrir el modal para el producto #7
+  document
+    .getElementById("learnMore7")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("modal7").classList.remove("hidden");
+    });
+
+  // Cerrar el modal #7
+  document.getElementById("closeModal7").addEventListener("click", function () {
+    document.getElementById("modal7").classList.add("hidden");
+  });
+
+  // Cerrar el modal #7 al hacer clic fuera del contenido
+  document.getElementById("modal7").addEventListener("click", function (event) {
+    if (event.target === this) {
+      this.classList.add("hidden");
+    }
+  });
+  // Abrir el modal para el producto #8
+  document
+    .getElementById("learnMore8")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("modal8").classList.remove("hidden");
+    });
+
+  // Cerrar el modal #8
+  document.getElementById("closeModal8").addEventListener("click", function () {
+    document.getElementById("modal8").classList.add("hidden");
+  });
+
+  // Cerrar el modal #8 al hacer clic fuera del contenido
+  document.getElementById("modal8").addEventListener("click", function (event) {
+    if (event.target === this) {
+      this.classList.add("hidden");
+    }
+  });
+  // Abrir el modal para el producto #9
+  document
+    .getElementById("learnMore9")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("modal9").classList.remove("hidden");
+    });
+
+  // Cerrar el modal #9
+  document.getElementById("closeModal9").addEventListener("click", function () {
+    document.getElementById("modal9").classList.add("hidden");
+  });
+
+  // Cerrar el modal #9 al hacer clic fuera del contenido
+  document.getElementById("modal9").addEventListener("click", function (event) {
+    if (event.target === this) {
+      this.classList.add("hidden");
+    }
+  });
 </script>
