@@ -91,23 +91,19 @@
   <br>
   <br>
 
-  <div class="container mx-auto mt-8">
+  <div class="container mx-auto mt-8 px-4">
     <h1 class="text-3xl font-bold text-center text-green-800">Estamos ubicados</h1>
-    <div class="flex flex-col md:flex-row">
-      <div class="w-full md:w-1/2 p-4 flex flex-col items-center">
-        <div class="h-64 flex items-center justify-center">
-          <img src="src/img/logo.jpg" alt="logo madera eterna inmunizada" />
-        </div>
-        <h2 class="text-2xl font-bold text-center text-green-800">Horario de Atención</h2>
-        <div>
-          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center">
-            <div class="text-green-800 text-xl font-bold text-center">Lunes a Viernes</div>
-            <div class="text-gray-700 bg-center">08:00 AM - 05:00 PM</div>
+    <div class="flex flex-col lg:flex-row lg:space-x-4">
+      <div class="w-full lg:w-1/2 p-4">
+        <div class="flex flex-col items-center">
+          <div class="h-64 flex items-center justify-center mb-8">
+            <img src="src/img/logo.jpg" alt="logo madera eterna inmunizada" class="max-w-full h-auto" />
           </div>
         </div>
       </div>
-      <div class="w-full md:w-1/2 p-4">
-        <div class="relative w-full h-64 md:h-80">
+  
+      <div class="w-full lg:w-1/2 p-4 mt-8 lg:mt-0">
+        <div class="relative w-full h-64 lg:h-80">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6034340617252!2d-78.64103002841105!3d-0.5946581352542544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d455ab1ae8a0d1%3A0x94fab2d49ab8c63!2sMaderas%20Eternas.%20Andrango%20e%20Hijos%20Cia.%20Ltda.!5e0!3m2!1ses!2sec!4v1722472693010!5m2!1ses!2sec"
             style="border: 0; width: 100%; height: 100%;"
@@ -116,12 +112,50 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div class="text-center px-4">
+        <div class="text-center px-4 mt-4">
           <p class="text-3xl font-bold text-center">Estamos ubicados en la Provincia de Pichincha, Cantón Mejía, Parroquia El Chaupi.</p>
         </div>
       </div>
     </div>
+    <div class="flex flex-col md:flex-row justify-center items-start gap-8 mt-8">
+      <!-- Sección de Contactos a la izquierda -->
+      <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-md mx-auto md:mx-0">
+        <h1 class="text-2xl font-bold text-center text-green-800 mb-4">Contactos</h1>
+        <table class="w-full text-left border-collapse">
+          <tbody>
+            <tr class="border-b border-gray-300">
+              <td class="py-4 px-6 font-semibold text-gray-700 rounded-l-lg bg-gray-100">Número Celular</td>
+              <td class="py-4 px-6 bg-white rounded-r-lg shadow-md">
+                <ul class="list-disc list-inside space-y-2">
+                  <li class="text-green-800 font-medium">0939185900</li>
+                  <li class="text-green-800 font-medium">0990231024</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6 font-semibold text-gray-700 rounded-l-lg bg-gray-100">Correo</td>
+              <td class="py-4 px-6 text-green-800 font-medium bg-white rounded-r-lg shadow-md">
+                ayaconstrucciones16@gmail.com
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    
+      <!-- Sección de Horario de Atención a la derecha -->
+      <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-md mx-auto md:mx-0">
+        <h2 class="text-2xl font-bold text-center text-green-800 mb-4">Horario de Atención</h2>
+        <div class="bg-white shadow-md rounded-lg p-4">
+          <div class="text-green-800 text-xl font-bold text-center mb-2">Lunes a Viernes</div>
+          <div class="text-gray-700 text-lg text-center bg-gray-100 rounded-lg p-2 shadow-sm">
+            08:00 AM - 05:00 PM
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </div>
+  
 
   <a
       href="https://wa.me/0939185900"
